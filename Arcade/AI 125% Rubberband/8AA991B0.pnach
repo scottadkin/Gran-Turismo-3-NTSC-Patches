@@ -1,0 +1,32 @@
+gametitle=Gran Turismo 3 [PBPX_955.03;1]NTSC [8AA991B0]
+
+// AI Rubberband #1: 1.25 - (125.00%)
+patch=1,EE,21FBE340,extended,3fa00000
+
+// AI Rubberband #2: 1.25 - (125.00%)
+patch=1,EE,21FBFA1C,extended,3fa00000
+
+// AI Rubberband #3: 1.25 - (125.00%)
+patch=1,EE,21FC10F8,extended,3fa00000
+
+// AI Rubberband #4: 1.25 - (125.00%)
+patch=1,EE,21FC27D4,extended,3fa00000
+
+// AI Rubberband #5: 1.25 - (125.00%)
+patch=1,EE,21FC3EB0,extended,3fa00000
+
+// AI MAX Throttle #1: 1 - (100.00%)
+patch=1,EE,21FBDDD8,extended,3f800000
+
+// AI MAX Throttle #2: 1 - (100.00%)
+patch=1,EE,21FBF4B4,extended,3f800000
+
+// AI MAX Throttle #3: 1 - (100.00%)
+patch=1,EE,21FC0B90,extended,3f800000
+
+// AI MAX Throttle #4: 1 - (100.00%)
+patch=1,EE,21FC226C,extended,3f800000
+
+// AI MAX Throttle #5: 1 - (100.00%)
+patch=1,EE,21FC3948,extended,3f800000
+
