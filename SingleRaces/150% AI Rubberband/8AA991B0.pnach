@@ -1,0 +1,40 @@
+gametitle=Gran Turismo 3 [PBPX_955.03;1]NTSC [8AA991B0]
+
+//------- Start group: Single Race AI Max Throttle -------//
+
+//Name: AI Max Throttle #1, Value=1
+patch=1,EE,21FBFEF8,extended,3f800000
+
+//Name: AI Max Throttle #2, Value=1
+patch=1,EE,21FC15D4,extended,3f800000
+
+//Name: AI Max Throttle #3, Value=1
+patch=1,EE,21FC2CB0,extended,3f800000
+
+//Name: AI Max Throttle #4, Value=1
+patch=1,EE,21FC438C,extended,3f800000
+
+//Name: AI Max Throttle #5, Value=1
+patch=1,EE,21FC5A68,extended,3f800000
+
+//------- End Group: Single Race AI Max Throttle -------//
+
+//------- Start group: Single Race AI Rubberband -------//
+
+//Name: AI Rubberband #1, Value=1.5
+patch=1,EE,21FC0460,extended,3fc00000
+
+//Name: AI Rubberband #2, Value=1.5
+patch=1,EE,21FC1B3C,extended,3fc00000
+
+//Name: AI Rubberband #3, Value=1.5
+patch=1,EE,21FC3218,extended,3fc00000
+
+//Name: AI Rubberband #4, Value=1.5
+patch=1,EE,21FC48F4,extended,3fc00000
+
+//Name: AI Rubberband #5, Value=1.5
+patch=1,EE,21FC5FD0,extended,3fc00000
+
+//------- End Group: Single Race AI Rubberband -------//
+
