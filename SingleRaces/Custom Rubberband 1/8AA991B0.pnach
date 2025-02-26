@@ -1,0 +1,59 @@
+gametitle=Gran Turismo 3 [PBPX_955.03;1]NTSC [8AA991B0]
+
+//Name: AI Max Throttle #1, Value=1
+//patch=1,EE,D1FBFEF8,extended,00000001
+//patch=1,EE,01FBFEF8,extended,00000006
+
+
+//-------
+//patch=1,EE,D1FA3F9C,extended,00000001
+//patch=1,EE,01FA3F9C,extended,00000006
+
+
+
+//Name: AI Rubberband #1, Value=2 IF Player 1st
+patch=1,EE,D1FA3F9C,extended,00000001
+patch=1,EE,21FC0460,extended,40000000
+
+//Name: AI Rubberband #2, Value=2 IF Player 1st
+patch=1,EE,D1FA3F9C,extended,00000001
+patch=1,EE,21FC1B3C,extended,40000000
+
+
+
+//Name: AI Rubberband #3, Value=2 IF Player 1st
+patch=1,EE,D1FA3F9C,extended,00000001
+patch=1,EE,21FC3218,extended,40000000
+
+//Name: AI Rubberband #4, Value=2 IF Player 1st
+patch=1,EE,D1FA3F9C,extended,00000001
+patch=1,EE,21FC48F4,extended,40000000
+
+//Name: AI Rubberband #5, Value=2 IF Player 1st
+patch=1,EE,D1FA3F9C,extended,00000001
+patch=1,EE,21FC5FD0,extended,40000000
+
+//------- End Group: Single Race AI Rubberband -------//
+
+
+//------- Start group: Single Race AI Rubberband -------//
+
+//Name: AI Rubberband #1, Value=0.5 if player is 6th
+patch=1,EE,D1FA3F9C,extended,00000006
+patch=1,EE,21FC0460,extended,3f000000
+
+//Name: AI Rubberband #2, Value=0.5 if player is 6th
+patch=1,EE,D1FA3F9C,extended,00000006
+patch=1,EE,21FC1B3C,extended,3f000000
+
+//Name: AI Rubberband #3, Value=0.5 if player is 6th
+patch=1,EE,D1FA3F9C,extended,00000006
+patch=1,EE,21FC3218,extended,3f000000
+
+//Name: AI Rubberband #4, Value=0.5 if player is 6th
+patch=1,EE,D1FA3F9C,extended,00000006
+patch=1,EE,21FC48F4,extended,3f000000
+
+//Name: AI Rubberband #5, Value=0.5 if player is 6th
+patch=1,EE,D1FA3F9C,extended,00000006
+patch=1,EE,21FC5FD0,extended,3f000000
