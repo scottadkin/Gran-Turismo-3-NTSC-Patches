@@ -1,0 +1,20 @@
+gametitle=Gran Turismo 3 [PBPX_955.03;1]NTSC [8AA991B0]
+
+
+//change single race at 50ms
+//patch=1,EE,D1FCBB94,extended,00000032
+//patch=1,EE,21FCBB94,extended,00400032
+
+
+//set player max RPM to 32000 when race timer hits 50 (single races)
+patch=1,EE,D1FCBB94,extended,00000032
+patch=1,EE,11FBDAB0,extended,00007D00
+
+
+//change championship race at 50ms
+//patch=1,EE,D1FCAB50,extended,00000032
+//patch=1,EE,21FCAB50,extended,00400032
+
+//set player max RPM to 32000 when race timer hits 50 (championship races)
+patch=1,EE,D1FCAB50,extended,00000032
+patch=1,EE,11FBCA6C,extended,00007D00
