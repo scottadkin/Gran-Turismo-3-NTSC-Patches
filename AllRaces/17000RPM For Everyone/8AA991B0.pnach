@@ -1,48 +1,56 @@
 gametitle=Gran Turismo 3 [PBPX_955.03;1]NTSC [8AA991B0]
 
 
+//single race ticks 1F978FC 4bytes
+//championship race ticks 1F9685C 4bytes
+
 //change single race at 50ms
 //patch=1,EE,D1FCBB94,extended,00000032
 //patch=1,EE,21FCBB94,extended,00400032
 
 
-//set player max RPM to 17000 when race timer hits 50 (single races)
-patch=1,EE,D1FCBB94,extended,00000032
+//set player max RPM to 17000 when race ticks hits 1 (single races)
+patch=1,EE,D1F978FC,extended,00000001
 patch=1,EE,11FBDAB0,extended,00004268
 
-//set ai car #1 max RPM to 17000 when race timer hits 50 (single races)
-patch=1,EE,D1FCBB94,extended,00000032
+//set rpm red line to 17000
+patch=1,EE,D1F978FC,extended,00000001
+patch=1,EE,11FBDB12,extended,00004268
+
+
+//set ai car #1 max RPM to 17000 when race ticks hits 1 (single races)
+patch=1,EE,D1F978FC,extended,00000001
 patch=1,EE,11FBF18C,extended,00004268
 //set rpm red line to 17000
-patch=1,EE,D1FCBB94,extended,00000032
+patch=1,EE,D1F978FC,extended,00000001
 patch=1,EE,11FBF1EE,extended,00004268
 
-//set ai car #2 max RPM to 17000 when race timer hits 50 (single races)
-patch=1,EE,D1FCBB94,extended,00000032
+//set ai car #2 max RPM to 17000 when race ticks hits 1 (single races)
+patch=1,EE,D1F978FC,extended,00000001
 patch=1,EE,11FC0868,extended,00004268
 //set rpm red line to 17000
-patch=1,EE,D1FCBB94,extended,00000032
+patch=1,EE,D1F978FC,extended,00000001
 patch=1,EE,11FC08CA,extended,00004268
 
-//set ai car #3 max RPM to 17000 when race timer hits 50 (single races)
-patch=1,EE,D1FCBB94,extended,00000032
+//set ai car #3 max RPM to 17000 when race ticks hits 1 (single races)
+patch=1,EE,D1F978FC,extended,00000001
 patch=1,EE,11FC1F44,extended,00004268
 //set rpm red line to 17000
-patch=1,EE,D1FCBB94,extended,00000032
+patch=1,EE,D1F978FC,extended,00000001
 patch=1,EE,11FC1FA6,extended,00004268
 
-//set ai car #4 max RPM to 17000 when race timer hits 50 (single races)
-patch=1,EE,D1FCBB94,extended,00000032
+//set ai car #4 max RPM to 17000 when race ticks hits 1 (single races)
+patch=1,EE,D1F978FC,extended,00000001
 patch=1,EE,11FC3620,extended,00004268
 //set rpm red line to 17000
-patch=1,EE,D1FCBB94,extended,00000032
+patch=1,EE,D1F978FC,extended,00000001
 patch=1,EE,11FC3682,extended,00004268
 
-//set ai car #5 max RPM to 17000 when race timer hits 50 (single races)
-patch=1,EE,D1FCBB94,extended,00000032
+//set ai car #5 max RPM to 17000 when race ticks hits 1 (single races)
+patch=1,EE,D1F978FC,extended,00000001
 patch=1,EE,11FC4CFC,extended,00004268
 //set rpm red line to 17000
-patch=1,EE,D1FCBB94,extended,00000032
+patch=1,EE,D1F978FC,extended,00000001
 patch=1,EE,11FC4D5E,extended,00004268
 
 
@@ -54,41 +62,44 @@ patch=1,EE,11FC4D5E,extended,00004268
 //patch=1,EE,D1FCAB50,extended,00000032
 //patch=1,EE,21FCAB50,extended,00400032
 
-//set player max RPM to 17000 when race timer hits 50 (championship races)
-patch=1,EE,D1FCAB50,extended,00000032
+//set player max RPM to 17000 when race ticks hits 1 (championship races)
+patch=1,EE,D1F9685C,extended,00000001
 patch=1,EE,11FBCA6C,extended,00004268
+//set redline to 17000
+patch=1,EE,D1F9685C,extended,00000001
+patch=1,EE,11FBCACE,extended,00004268
 
-//set AI #1 max RPM to 17000 when race timer hits 50 (championship races)
-patch=1,EE,D1FCAB50,extended,00000032
+//set AI #1 max RPM to 17000 when race ticks hits 1 (championship races)
+patch=1,EE,D1F9685C,extended,00000001
 patch=1,EE,11FBE148,extended,00004268
 //set redline to 17000
-patch=1,EE,D1FCAB50,extended,00000032
+patch=1,EE,D1F9685C,extended,00000001
 patch=1,EE,11FBE1AA,extended,00004268
 
-//set AI #2 max RPM to 17000 when race timer hits 50 (championship races)
-patch=1,EE,D1FCAB50,extended,00000032
+//set AI #2 max RPM to 17000 when race ticks hits 1 (championship races)
+patch=1,EE,D1F9685C,extended,00000001
 patch=1,EE,11FBF824,extended,00004268
 //set redline to 17000
-patch=1,EE,D1FCAB50,extended,00000032
+patch=1,EE,D1F9685C,extended,00000001
 patch=1,EE,11FBF886,extended,00004268
 
-//set AI #3 max RPM to 17000 when race timer hits 50 (championship races)
-patch=1,EE,D1FCAB50,extended,00000032
+//set AI #3 max RPM to 17000 when race ticks hits 1 (championship races)
+patch=1,EE,D1F9685C,extended,00000001
 patch=1,EE,11FC0F00,extended,00004268
 //set redline to 17000
-patch=1,EE,D1FCAB50,extended,00000032
+patch=1,EE,D1F9685C,extended,00000001
 patch=1,EE,11FC0F62,extended,00004268
 
-//set AI #4 max RPM to 17000 when race timer hits 50 (championship races)
-patch=1,EE,D1FCAB50,extended,00000032
+//set AI #4 max RPM to 17000 when race ticks hits 1 (championship races)
+patch=1,EE,D1F9685C,extended,00000001
 patch=1,EE,11FC25DC,extended,00004268
 //set redline to 17000
-patch=1,EE,D1FCAB50,extended,00000032
+patch=1,EE,D1F9685C,extended,00000001
 patch=1,EE,11FC263E,extended,00004268
 
-//set AI #5 max RPM to 17000 when race timer hits 50 (championship races)
-patch=1,EE,D1FCAB50,extended,00000032
+//set AI #5 max RPM to 17000 when race ticks hits 1 (championship races)
+patch=1,EE,D1F9685C,extended,00000001
 patch=1,EE,11FC3CB8,extended,00004268
 //set redline to 17000
-patch=1,EE,D1FCAB50,extended,00000032
+patch=1,EE,D1F9685C,extended,00000001
 patch=1,EE,11FC3D1A,extended,00004268
