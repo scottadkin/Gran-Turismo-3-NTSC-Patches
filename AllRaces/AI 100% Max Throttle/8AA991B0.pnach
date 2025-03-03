@@ -1,0 +1,63 @@
+gametitle=Gran Turismo 3 [PBPX_955.03;1]NTSC [8AA991B0]
+
+
+
+
+//(single races fire tick)
+patch=1,EE,D1F978FC,extended,00000001
+
+
+
+//change championship race at 1st tick
+//patch=1,EE,D1F9685C,extended,00000001
+
+
+
+//------- Start group: Single Race AI Max Throttle -------//
+
+//Name: AI Max Throttle #1, Value=1
+patch=1,EE,D1F978FC,extended,00000001
+patch=1,EE,21FBFEF8,extended,3f800000
+
+//Name: AI Max Throttle #2, Value=1
+patch=1,EE,D1F978FC,extended,00000001
+patch=1,EE,21FC15D4,extended,3f800000
+
+//Name: AI Max Throttle #3, Value=1
+patch=1,EE,D1F978FC,extended,00000001
+patch=1,EE,21FC2CB0,extended,3f800000
+
+//Name: AI Max Throttle #4, Value=1
+patch=1,EE,D1F978FC,extended,00000001
+patch=1,EE,21FC438C,extended,3f800000
+
+//Name: AI Max Throttle #5, Value=1
+patch=1,EE,D1F978FC,extended,00000001
+patch=1,EE,21FC5A68,extended,3f800000
+
+//------- End Group: Single Race AI Max Throttle -------//
+
+
+//------- Start group: Championship AI Max Throttle -------//
+
+//Name: AI Max Throttle #1, Value=1
+patch=1,EE,D1F9685C,extended,00000001
+patch=1,EE,21FBEEB4,extended,3f800000
+
+//Name: AI Max Throttle #2, Value=1
+patch=1,EE,D1F9685C,extended,00000001
+patch=1,EE,21FC0590,extended,3f800000
+
+//Name: AI Max Throttle #3, Value=1
+patch=1,EE,D1F9685C,extended,00000001
+patch=1,EE,21FC1C6C,extended,3f800000
+
+//Name: AI Max Throttle #4, Value=1
+patch=1,EE,D1F9685C,extended,00000001
+patch=1,EE,21FC3348,extended,3f800000
+
+//Name: AI Max Throttle #5, Value=1
+patch=1,EE,D1F9685C,extended,00000001
+patch=1,EE,21FC4A24,extended,3f800000
+
+//------- End Group: Championship AI Max Throttle -------//
