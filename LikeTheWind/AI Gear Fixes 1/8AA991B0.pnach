@@ -1,0 +1,158 @@
+gametitle=Gran Turismo 3 [PBPX_955.03;1]NTSC [8AA991B0]
+
+//test unused byte addresss? 00350AF0(works)
+//if single race tick hits 1, set our test byte to 1
+patch=1,EE,D1F978FC,extended,00000001
+patch=1,EE,00350AF0,extended,00000001
+
+//if championship race tick hits 1, set our test byte to 2
+patch=1,EE,D1F9685C,extended,00000001
+patch=1,EE,00350AF0,extended,00000002
+
+
+//--- check if ai is using zonda
+//final gear ratio is +32bytes from 1st gear 
+//ai 1
+patch=1,EE,D092E104,extended,00000C0B
+patch=1,EE,1092E120,extended,00000898
+
+//ai 2
+patch=1,EE,D0930264,extended,00000C0B
+patch=1,EE,10930280,extended,00000898
+//ai 3
+patch=1,EE,D09323C4,extended,00000C0B
+patch=1,EE,109323F0,extended,00000898
+
+//ai 4
+patch=1,EE,D0934524,extended,00000C0B
+patch=1,EE,10934540,extended,00000898
+
+//ai 5
+patch=1,EE,D0936684,extended,00000C0B
+patch=1,EE,109366A0,extended,00000898
+
+//--- check if ai is using LOTUS
+
+//ai 1
+patch=1,EE,D092E104,extended,00000B68
+patch=1,EE,1092E120,extended,00000A8C
+
+//ai 2
+patch=1,EE,D0930264,extended,00000B68
+patch=1,EE,10930280,extended,00000A8C
+//ai 3
+patch=1,EE,D09323C4,extended,00000B68
+patch=1,EE,109323E0,extended,00000A8C
+
+//ai 4
+patch=1,EE,D0934524,extended,00000B68
+patch=1,EE,10934540,extended,00000A8C
+
+//ai 5
+patch=1,EE,D0936684,extended,00000B68
+patch=1,EE,109366A0,extended,00000A8C
+
+//--- check if ai is using supra road car
+
+//ai 1
+patch=1,EE,D092E104,extended,00000EF3
+patch=1,EE,1092E120,extended,00000960
+
+//ai 2
+patch=1,EE,D0930264,extended,00000EF3
+patch=1,EE,10930280,extended,00000960
+//ai 3
+patch=1,EE,D09323C4,extended,00000EF3
+patch=1,EE,109323E0,extended,00000960
+
+//ai 4
+patch=1,EE,D0934524,extended,00000EF3
+patch=1,EE,10934540,extended,00000960
+
+//ai 5
+patch=1,EE,D0936684,extended,00000EF3
+patch=1,EE,109366A0,extended,00000960
+
+//--- check if ai is using arta nsx
+
+//ai 1
+patch=1,EE,D092E104,extended,00000F7E
+patch=1,EE,1092E120,extended,00000CB2
+
+//ai 2
+patch=1,EE,D0930264,extended,00000F7E
+patch=1,EE,10930280,extended,00000CB2
+//ai 3
+patch=1,EE,D09323C4,extended,00000F7E
+patch=1,EE,109323E0,extended,00000CB2
+
+//ai 4
+patch=1,EE,D0934524,extended,00000F7E
+patch=1,EE,10934540,extended,00000CB2
+
+//ai 5
+patch=1,EE,D0936684,extended,00000F7E
+patch=1,EE,109366A0,extended,00000CB2
+
+//--- check if ai is using 787b
+
+//ai 1
+patch=1,EE,D092E104,extended,00000E6A
+patch=1,EE,1092E120,extended,00000C80
+
+//ai 2
+patch=1,EE,D0930264,extended,00000E6A
+patch=1,EE,10930280,extended,00000C80
+//ai 3
+patch=1,EE,D09323C4,extended,00000E6A
+patch=1,EE,109323E0,extended,00000C80
+
+//ai 4
+patch=1,EE,D0934524,extended,00000E6A
+patch=1,EE,10934540,extended,00000C80
+
+//ai 5
+patch=1,EE,D0936684,extended,00000E6A
+patch=1,EE,109366A0,extended,00000C80
+
+//--- check if ai is using gt-one
+
+//ai 1
+patch=1,EE,D092E104,extended,00000CAF
+patch=1,EE,1092E120,extended,00000DDE
+
+//ai 2
+patch=1,EE,D0930264,extended,00000CAF
+patch=1,EE,10930280,extended,00000DDE
+//ai 3
+patch=1,EE,D09323C4,extended,00000CAF
+patch=1,EE,109323E0,extended,00000DDE
+
+//ai 4
+patch=1,EE,D0934524,extended,00000CAF
+patch=1,EE,10934540,extended,00000DDE
+
+//ai 5
+patch=1,EE,D0936684,extended,00000CAF
+patch=1,EE,109366A0,extended,00000DDE
+
+//--- check if ai is using speed-12
+
+//ai 1
+patch=1,EE,D092E104,extended,00000F41
+patch=1,EE,1092E120,extended,00000AF0
+
+//ai 2
+patch=1,EE,D0930264,extended,00000F41
+patch=1,EE,10930280,extended,00000AF0
+//ai 3
+patch=1,EE,D09323C4,extended,00000F41
+patch=1,EE,109323E0,extended,00000AF0
+
+//ai 4
+patch=1,EE,D0934524,extended,00000F41
+patch=1,EE,10934540,extended,00000AF0
+
+//ai 5
+patch=1,EE,D0936684,extended,00000F41
+patch=1,EE,109366A0,extended,00000AF0
