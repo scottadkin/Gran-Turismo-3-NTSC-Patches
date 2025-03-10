@@ -53,25 +53,25 @@ patch=1,EE,D0936684,extended,00000B68
 patch=1,EE,109366A0,extended,00000A8C
 
 //--- check if ai is using supra road car
-//using 2nd gear instead of first geat because skyline uses same first gear ratio
+//using final gear instead of first geat because skyline uses same gear ratios
 
 //ai 1
-patch=1,EE,D092E108,extended,000009DF
+patch=1,EE,D092E120,extended,00000CC2
 patch=1,EE,1092E120,extended,00000960
 
 //ai 2
-patch=1,EE,D0930268,extended,000009DF
+patch=1,EE,D0930280,extended,00000CC2
 patch=1,EE,10930280,extended,00000960
 //ai 3
-patch=1,EE,D09323C8,extended,000009DF
+patch=1,EE,D09323E0,extended,00000CC2
 patch=1,EE,109323E0,extended,00000960
 
 //ai 4
-patch=1,EE,D0934528,extended,000009DF
+patch=1,EE,D0934540,extended,00000CC2
 patch=1,EE,10934540,extended,00000960
 
 //ai 5
-patch=1,EE,D0936688,extended,000009DF
+patch=1,EE,D09366A0,extended,00000CC2
 patch=1,EE,109366A0,extended,00000960
 
 //--- check if ai is using arta nsx
@@ -181,22 +181,22 @@ patch=1,EE,D0936684,extended,00000EEB
 patch=1,EE,109366A0,extended,00000ABE
 
 //--- check if ai is using skyline
-
+//using final gear instead of 1 because of supra
 //ai 1
-patch=1,EE,D092E104,extended,00000EF3
-patch=1,EE,1092E120,extended,00000C1C
+patch=1,EE,D092E120,extended,00000DD9
+patch=1,EE,1092E120,extended,00000BB8
 
 //ai 2
-patch=1,EE,D0930264,extended,00000EF3
-patch=1,EE,10930280,extended,00000C1C
+patch=1,EE,D0930280,extended,00000DD9
+patch=1,EE,10930280,extended,00000BB8
 //ai 3
-patch=1,EE,D09323C4,extended,00000EF3
-patch=1,EE,109323E0,extended,00000C1C
+patch=1,EE,D09323E0,extended,00000DD9
+patch=1,EE,109323E0,extended,00000BB8
 
 //ai 4
-patch=1,EE,D0934524,extended,00000EF3
-patch=1,EE,10934540,extended,00000C1C
+patch=1,EE,D0934540,extended,00000DD9
+patch=1,EE,10934540,extended,00000BB8
 
 //ai 5
-patch=1,EE,D0936684,extended,00000EF3
-patch=1,EE,109366A0,extended,00000C1C
+patch=1,EE,D09366A0,extended,00000DD9
+patch=1,EE,109366A0,extended,00000BB8
