@@ -1,0 +1,123 @@
+//test unused byte addresss? 00350AF0(works)
+//if single race tick hits 1, set our test byte to 1
+patch=1,EE,D1F978FC,extended,00000001
+patch=1,EE,00350AF0,extended,00000001
+
+//if championship race tick hits 1, set our test byte to 2
+patch=1,EE,D1F9685C,extended,00000001
+patch=1,EE,00350AF0,extended,00000002
+//------- Start group: Single Race AI Rubberband -------//
+
+//Name: AI Rubberband #1, Value=1.1
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC0460,extended,3f8ccccd
+
+//Name: AI Rubberband #2, Value=1.1
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC1B3C,extended,3f8ccccd
+
+//Name: AI Rubberband #3, Value=1.1
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC3218,extended,3f8ccccd
+
+//Name: AI Rubberband #4, Value=1.1
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC48F4,extended,3f8ccccd
+
+//Name: AI Rubberband #5, Value=1.1
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC5FD0,extended,3f8ccccd
+
+//------- End Group: Single Race AI Rubberband -------//
+
+//------- Start group: Single Race AI Max Throttle -------//
+
+//Name: AI Max Throttle #1, Value=1
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FBFEF8,extended,3f800000
+
+//Name: AI Max Throttle #2, Value=1
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC15D4,extended,3f800000
+
+//Name: AI Max Throttle #3, Value=1
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC2CB0,extended,3f800000
+
+//Name: AI Max Throttle #4, Value=1
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC438C,extended,3f800000
+
+//Name: AI Max Throttle #5, Value=1
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC5A68,extended,3f800000
+
+//------- End Group: Single Race AI Max Throttle -------//
+
+//------- Start group: Championship Races AI Rubberband -------//
+
+//Name: AI Rubberband #1, Value=1.1
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FBF41C,extended,3f8ccccd
+
+//Name: AI Rubberband #2, Value=1.1
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FC0AF8,extended,3f8ccccd
+
+//Name: AI Rubberband #3, Value=1.1
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FC21D4,extended,3f8ccccd
+
+//Name: AI Rubberband #4, Value=1.1
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FC38B0,extended,3f8ccccd
+
+//Name: AI Rubberband #5, Value=1.1
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FC4F8C,extended,3f8ccccd
+
+//------- End Group: Championship Races AI Rubberband -------//
+
+//------- Start group: Championship AI Max Throttle -------//
+
+//Name: AI Max Throttle #1, Value=1
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FBEEB4,extended,3f800000
+
+//Name: AI Max Throttle #2, Value=1
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FC0590,extended,3f800000
+
+//Name: AI Max Throttle #3, Value=1
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FC1C6C,extended,3f800000
+
+//Name: AI Max Throttle #4, Value=1
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FC3348,extended,3f800000
+
+//Name: AI Max Throttle #5, Value=1
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FC4A24,extended,3f800000
+
+//------- End Group: Championship AI Max Throttle -------//
