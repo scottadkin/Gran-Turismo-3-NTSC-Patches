@@ -1,0 +1,107 @@
+//test unused byte addresss? 00350AF0(works)
+//if single race tick hits 1, set our test byte to 1
+patch=1,EE,D1F978FC,extended,00000001
+patch=1,EE,00350AF0,extended,00000001
+
+//if championship race tick hits 1, set our test byte to 2
+patch=1,EE,D1F9685C,extended,00000001
+patch=1,EE,00350AF0,extended,00000002
+
+//25x power
+patch=1,EE,20350324,extended,3ccccccd
+
+//Reduce tyre wear
+patch=1,EE,203501D0,extended,4cbebc20
+
+//global gear 50% normal value
+patch=1,EE,20350380,extended,3a03126f
+
+
+//4x gravity 421ccccd
+patch=1,EE,20350544,extended,421ccccd
+
+
+//if single race give AI More Grip (4.0)
+
+//player
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FBDC8C,extended,40400000
+
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FBE1A8,extended,40400000
+
+//ai #1
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FBF368,extended,40400000
+
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FBF884,extended,40400000
+//ai #2
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC0A44,extended,40400000
+
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC0F60,extended,40400000
+//ai #3
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC2120,extended,40400000
+
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC263C,extended,40400000
+//ai #4
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC37FC,extended,40400000
+
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC3D18,extended,40400000
+//ai #5
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC4ED8,extended,40400000
+
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC53F4,extended,40400000
+
+
+//if championship race give AI More Grip
+
+//player
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FBCC48,extended,40400000
+
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FBD164,extended,40400000
+
+//ai #1
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FBFA00,extended,40400000
+
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FBFF1C,extended,40400000
+
+//ai #2
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FBE324,extended,40400000
+
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FBE840,extended,40400000
+
+//ai #3
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FC10DC,extended,40400000
+
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FC15F8,extended,40400000
+
+//ai #4
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FC27B8,extended,40400000
+
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FC2CD4,extended,40400000
+
+//ai #5
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FC3E94,extended,40400000
+
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FC43B0,extended,40400000
