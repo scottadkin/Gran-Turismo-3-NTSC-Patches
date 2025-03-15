@@ -1,6 +1,6 @@
 [110% AI rubberband and maximum throttle]
 description=110% AI rubberband and maximum throttle
-author=scottadkin, KingJackSkellington
+author=scottadkin, KingJackSkellington, xan1242
 // Global AI rubberband set to 110%, regardless if the player is in a single race or in a championship.
 patch=1,EE,20350584,extended,3C343958
 
