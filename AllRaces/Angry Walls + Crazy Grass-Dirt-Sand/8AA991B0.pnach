@@ -1,0 +1,7 @@
+gametitle=Gran Turismo 3 [PBPX_955.03;1]NTSC [8AA991B0]
+
+//crazy grass
+patch=1,EE,20350548,extended,C0A00000
+
+//angry walls
+patch=1,EE,203506C0,extended,c00ccccd
