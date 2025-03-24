@@ -1,0 +1,148 @@
+gametitle=Gran Turismo 3 [PBPX_955.03;1]NTSC [8AA991B0]
+//all races apart from F1 & endurance set to a max of 2 laps
+
+
+//if single race is 3 laps set to 2
+
+patch=1,EE,D1FCBB55,extended,00000003
+patch=1,EE,01FA3F7C,extended,00000002
+
+//always want to set real target laps last so the hud ones are set correctly before
+patch=1,EE,D1FCBB55,extended,00000003
+patch=1,EE,01FCBB55,extended,00000002
+
+//if single race is 4 laps set to 2
+
+patch=1,EE,D1FCBB55,extended,00000004
+patch=1,EE,01FA3F7C,extended,00000002
+
+//always want to set real target laps last so the hud ones are set correctly before
+patch=1,EE,D1FCBB55,extended,00000004
+patch=1,EE,01FCBB55,extended,00000002
+
+
+//if single race is 5 laps set to 2
+
+patch=1,EE,D1FCBB55,extended,00000005
+patch=1,EE,01FA3F7C,extended,00000002
+
+//always want to set real target laps last so the hud ones are set correctly before
+patch=1,EE,D1FCBB55,extended,00000005
+patch=1,EE,01FCBB55,extended,00000002
+
+//if single race is 7 laps set to 2
+
+patch=1,EE,D1FCBB55,extended,00000007
+patch=1,EE,01FA3F7C,extended,00000002
+
+//always want to set real target laps last so the hud ones are set correctly before
+patch=1,EE,D1FCBB55,extended,00000007
+patch=1,EE,01FCBB55,extended,00000002
+
+
+//if single race is 10 laps set to 2
+
+patch=1,EE,D1FCBB55,extended,0000000A
+patch=1,EE,01FA3F7C,extended,00000002
+
+
+//always want to set real target laps last so the hud ones are set correctly before
+patch=1,EE,D1FCBB55,extended,0000000A
+patch=1,EE,01FCBB55,extended,00000002
+
+
+//if single race is 15 laps set to 2
+
+patch=1,EE,D1FCBB55,extended,0000000F
+patch=1,EE,01FA3F7C,extended,00000002
+
+
+//always want to set real target laps last so the hud ones are set correctly before
+patch=1,EE,D1FCBB55,extended,0000000F
+patch=1,EE,01FCBB55,extended,00000002
+
+
+//if single race is 20 laps set to 2
+
+patch=1,EE,D1FCBB55,extended,00000014
+patch=1,EE,01FA3F7C,extended,00000002
+
+
+
+//always want to set real target laps last so the hud ones are set correctly before
+patch=1,EE,D1FCBB55,extended,00000014
+patch=1,EE,01FCBB55,extended,00000002
+
+
+
+//if championship race
+
+//if championship race is 3 laps long set to 2
+//Target Laps HUD
+patch=1,EE,D1FCAB11,extended,00000003
+patch=1,EE,01FA2EDC,extended,00000002
+
+//Target Laps
+patch=1,EE,D1FCAB11,extended,00000003
+patch=1,EE,01FCAB11,extended,00000002
+
+//if championship race is 4 laps long set to 2
+//Target Laps HUD
+patch=1,EE,D1FCAB11,extended,00000004
+patch=1,EE,01FA2EDC,extended,00000002
+
+//Target Laps
+patch=1,EE,D1FCAB11,extended,00000004
+patch=1,EE,01FCAB11,extended,00000002
+
+
+//if championship race is 5 laps long set to 2
+//Target Laps HUD
+patch=1,EE,D1FCAB11,extended,00000005
+patch=1,EE,01FA2EDC,extended,00000002
+
+//Target Laps
+patch=1,EE,D1FCAB11,extended,00000005
+patch=1,EE,01FCAB11,extended,00000002
+
+
+//if championship race is 7 laps long set to 2
+//Target Laps HUD
+patch=1,EE,D1FCAB11,extended,00000007
+patch=1,EE,01FA2EDC,extended,00000002
+
+
+//Target Laps
+patch=1,EE,D1FCAB11,extended,00000007
+patch=1,EE,01FCAB11,extended,00000002
+
+
+//if championship race is 10 laps long set to 2
+//Target Laps HUD
+patch=1,EE,D1FCAB11,extended,0000000A
+patch=1,EE,01FA2EDC,extended,00000002
+
+
+//Target Laps
+patch=1,EE,D1FCAB11,extended,0000000A
+patch=1,EE,01FCAB11,extended,00000002
+
+//if championship race is 15 laps long set to 2
+//Target Laps HUD
+patch=1,EE,D1FCAB11,extended,0000000F
+patch=1,EE,01FA2EDC,extended,00000002
+
+//Target Laps
+patch=1,EE,D1FCAB11,extended,0000000F
+patch=1,EE,01FCAB11,extended,00000002
+
+
+
+//if championship race is 20 laps long set to 2
+//Target Laps HUD
+patch=1,EE,D1FCAB11,extended,00000014
+patch=1,EE,01FA2EDC,extended,00000002
+
+//Target Laps
+patch=1,EE,D1FCAB11,extended,00000014
+patch=1,EE,01FCAB11,extended,00000002
