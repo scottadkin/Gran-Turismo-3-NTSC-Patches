@@ -1,0 +1,4 @@
+gametitle=Gran Turismo 3 [PBPX_955.03;1]NTSC [8AA991B0]
+
+//-5 global drag
+patch=1,EE,203501E4,extended,c0a00000
