@@ -1,0 +1,138 @@
+gametitle=Gran Turismo 3 [PBPX_955.03;1]NTSC [8AA991B0]
+
+//test unused byte addresss? 00350AF0(works)
+//if single race tick hits 1, set our test byte to 1
+patch=1,EE,D1F978FC,extended,00000001
+patch=1,EE,00350AF0,extended,00000001
+
+//if championship race tick hits 1, set our test byte to 2
+patch=1,EE,D1F9685C,extended,00000001
+patch=1,EE,00350AF0,extended,00000002
+//------- Start group: Single Race RPM -------//
+
+//Name: Player MAX RPM, Value=00002AF8
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FBDAB0,extended,00002AF8
+
+//Name: Player RPM Red Line, Value=00002AF8
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FBDB12,extended,00002AF8
+
+//Name: AI #1 MAX RPM, Value=00002AF8
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FBF18C,extended,00002AF8
+
+//Name: AI #1 RPM Red Line, Value=00002AF8
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FBF1EE,extended,00002AF8
+
+//Name: AI #2 MAX RPM, Value=00002AF8
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC0868,extended,00002AF8
+
+//Name: AI #2 RPM Red Line, Value=00002AF8
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC08CA,extended,00002AF8
+
+//Name: AI #3 MAX RPM, Value=00002AF8
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC1F44,extended,00002AF8
+
+//Name: AI #3 RPM Red Line, Value=00002AF8
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC1FA6,extended,00002AF8
+
+//Name: AI #4 MAX RPM, Value=00002AF8
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC3620,extended,00002AF8
+
+//Name: AI #4 RPM Red Line, Value=00002AF8
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC3682,extended,00002AF8
+
+//Name: AI #5 MAX RPM, Value=00002AF8
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC4CFC,extended,00002AF8
+
+//Name: AI #5 RPM Red Line, Value=00002AF8
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC4D5E,extended,00002AF8
+
+//------- End Group: Single Race RPM -------//
+
+//------- Start group: Championship Race RPM -------//
+
+//Name: Player MAX RPM, Value=00002AF8
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FBCA6C,extended,00002AF8
+
+//Name: Player RPM Red Line, Value=00002AF8
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FBCACE,extended,00002AF8
+
+//Name: AI #1 MAX RPM, Value=00002AF8
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FBE148,extended,00002AF8
+
+//Name: AI #1 RPM Red Line, Value=00002AF8
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FBE1AA,extended,00002AF8
+
+//Name: AI #2 MAX RPM, Value=00002AF8
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FBF824,extended,00002AF8
+
+//Name: AI #2 RPM Red Line, Value=00002AF8
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FBF886,extended,00002AF8
+
+//Name: AI #3 MAX RPM, Value=00002AF8
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FC0F00,extended,00002AF8
+
+//Name: AI #3 RPM Red Line, Value=00002AF8
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FC0F62,extended,00002AF8
+
+//Name: AI #4 MAX RPM, Value=00002AF8
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FC25DC,extended,00002AF8
+
+//Name: AI #4 RPM Red Line, Value=00002AF8
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FC263E,extended,00002AF8
+
+//Name: AI #5 MAX RPM, Value=00002AF8
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FC3CB8,extended,00002AF8
+
+//Name: AI #5 RPM Red Line, Value=00002AF8
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FC3D1A,extended,00002AF8
+
+//------- End Group: Championship Race RPM -------//
+
