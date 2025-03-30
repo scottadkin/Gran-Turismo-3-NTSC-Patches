@@ -1,0 +1,258 @@
+gametitle=Gran Turismo 3 [PBPX_955.03;1]NTSC [8AA991B0]
+
+//test unused byte addresss? 00350AF0(works)
+//if single race tick hits 1, set our test byte to 1
+patch=1,EE,D1F978FC,extended,00000001
+patch=1,EE,00350AF0,extended,00000001
+
+//if championship race tick hits 1, set our test byte to 2
+patch=1,EE,D1F9685C,extended,00000001
+patch=1,EE,00350AF0,extended,00000002
+//------- Start group: Single Race Race Tyre Wear -------//
+
+//Name: Player Front Left Tyre, Value=0
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FBE960,extended,00000000
+
+//Name: Player Front Right Tyre, Value=0
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FBEA04,extended,00000000
+
+//Name: Player Rear Left Tyre, Value=0
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FBEAA8,extended,00000000
+
+//Name: Player Rear Right Tyre, Value=0
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FBEB4C,extended,00000000
+
+//Name: AI #1 Front Left Tyre, Value=0
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC003C,extended,00000000
+
+//Name: AI #1 Front Right Tyre, Value=0
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC00E0,extended,00000000
+
+//Name: AI #1 Rear Left Tyre, Value=0
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC0184,extended,00000000
+
+//Name: AI #1 Rear Right Tyre, Value=0
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC0228,extended,00000000
+
+//Name: AI #2 Front Left Tyre, Value=0
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC1718,extended,00000000
+
+//Name: AI #2 Front Right Tyre, Value=0
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC17BC,extended,00000000
+
+//Name: AI #2 Rear Left Tyre, Value=0
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC1860,extended,00000000
+
+//Name: AI #2 Rear Right Tyre, Value=0
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC1904,extended,00000000
+
+//Name: AI #3 Front Left Tyre, Value=0
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC2DF4,extended,00000000
+
+//Name: AI #3 Front Right Tyre, Value=0
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC2E98,extended,00000000
+
+//Name: AI #3 Rear Left Tyre, Value=0
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC2F3C,extended,00000000
+
+//Name: AI #3 Rear Right Tyre, Value=0
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC2FE0,extended,00000000
+
+//Name: AI #4 Front Left Tyre, Value=0
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC44D0,extended,00000000
+
+//Name: AI #4 Front Right Tyre, Value=0
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC4574,extended,00000000
+
+//Name: AI #4 Rear Left Tyre, Value=0
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC4618,extended,00000000
+
+//Name: AI #4 Rear Right Tyre, Value=0
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC46BC,extended,00000000
+
+//Name: AI #5 Front Left Tyre, Value=0
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC5BAC,extended,00000000
+
+//Name: AI #5 Front Right Tyre, Value=0
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC5C50,extended,00000000
+
+//Name: AI #5 Rear Left Tyre, Value=0
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC5CF4,extended,00000000
+
+//Name: AI #5 Rear Right Tyre, Value=0
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC5D98,extended,00000000
+
+//------- End Group: Single Race Race Tyre Wear -------//
+
+//------- Start group: Championship Race Tyre Wear -------//
+
+//Name: Player Front Left Tyre, Value=0
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FBD91C,extended,00000000
+
+//Name: Player Front Right Tyre, Value=0
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FBD9C0,extended,00000000
+
+//Name: Player Rear Left Tyre, Value=0
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FBDA64,extended,00000000
+
+//Name: Player Rear Right Tyre, Value=0
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FBDB08,extended,00000000
+
+//Name: AI #1 Front Left Tyre, Value=0
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FBEFF8,extended,00000000
+
+//Name: AI #1 Front Right Tyre, Value=0
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FBF09C,extended,00000000
+
+//Name: AI #1 Rear Left Tyre, Value=0
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FBF140,extended,00000000
+
+//Name: AI #1 Rear Right Tyre, Value=0
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FBF1E4,extended,00000000
+
+//Name: AI #2 Front Left Tyre, Value=0
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FC06D4,extended,00000000
+
+//Name: AI #2 Front Right Tyre, Value=0
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FC0778,extended,00000000
+
+//Name: AI #2 Rear Left Tyre, Value=0
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FC081C,extended,00000000
+
+//Name: AI #2 Rear Right Tyre, Value=0
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FC08C0,extended,00000000
+
+//Name: AI #3 Front Left Tyre, Value=0
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FC1DB0,extended,00000000
+
+//Name: AI #3 Front Right Tyre, Value=0
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FC1E54,extended,00000000
+
+//Name: AI #3 Rear Left Tyre, Value=0
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FC1EF8,extended,00000000
+
+//Name: AI #3 Rear Right Tyre, Value=0
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FC1F9C,extended,00000000
+
+//Name: AI #4 Front Left Tyre, Value=0
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FC348C,extended,00000000
+
+//Name: AI #4 Front Right Tyre, Value=0
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FC3530,extended,00000000
+
+//Name: AI #4 Rear Left Tyre, Value=0
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FC35D4,extended,00000000
+
+//Name: AI #4 Rear Right Tyre, Value=0
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FC3678,extended,00000000
+
+//Name: AI #5 Front Left Tyre, Value=0
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FC4B68,extended,00000000
+
+//Name: AI #5 Front Right Tyre, Value=0
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FC4C0C,extended,00000000
+
+//Name: AI #5 Rear Left Tyre, Value=0
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FC4CB0,extended,00000000
+
+//Name: AI #5 Rear Right Tyre, Value=0
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FC4D54,extended,00000000
+
+//------- End Group: Championship Race Tyre Wear -------//
+
