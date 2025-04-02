@@ -1,0 +1,15 @@
+gametitle=Gran Turismo 3 [PBPX_955.03;1]NTSC [8AA991B0]
+
+//license test ticks? 17000 red line
+patch=1,EE,D1FD0D0C,extended,00000001
+patch=1,EE,11FF16B2,extended,00007D00
+
+//max rpm
+patch=1,EE,D1FD0D0C,extended,00000001
+patch=1,EE,11FF1650,extended,00007D00
+
+
+//rpm red line
+//21FF16B2
+//max rpm
+//21FF1650
