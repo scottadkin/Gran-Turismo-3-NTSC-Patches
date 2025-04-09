@@ -1,0 +1,4 @@
+gametitle=Gran Turismo 3 [PBPX_955.03;1]NTSC [8AA991B0]
+
+//insane grip license tests
+patch=1,EE,21FF14DC,extended,00000000
