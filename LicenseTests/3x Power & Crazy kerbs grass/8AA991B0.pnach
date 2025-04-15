@@ -1,0 +1,18 @@
+gametitle=Gran Turismo 3 [PBPX_955.03;1]NTSC [8AA991B0]
+
+//crazy grass
+patch=1,EE,20350548,extended,3e800000
+
+//more than double wall push back
+patch=1,EE,203506C0,extended,c00ccccd
+
+//global angry kerbs
+//patch=1,EE,20350158,extended,3e800000
+//default 3a83126f = 0.001000000047
+
+//angry license kerbs(doesnt work on wet tracks...)
+patch=1,EE,21FF1D4C,extended,c57a0000
+patch=1,EE,21FF1830,extended,c57a0000
+
+//Triple power
+patch=1,EE,20350324,extended,3b449ba6
