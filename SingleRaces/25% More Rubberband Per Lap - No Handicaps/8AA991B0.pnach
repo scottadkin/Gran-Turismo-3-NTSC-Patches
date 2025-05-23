@@ -1,0 +1,187 @@
+gametitle=Gran Turismo 3 [PBPX_955.03;1]NTSC [8AA991B0]
+
+//test unused byte addresss? 00350AF0(works)
+//if single race tick hits 1, set our test byte to 1
+patch=1,EE,D1F978FC,extended,00000001
+patch=1,EE,00350AF0,extended,00000001
+
+//if championship race tick hits 1, set our test byte to 2
+patch=1,EE,D1F9685C,extended,00000001
+patch=1,EE,00350AF0,extended,00000002
+//------- Start group: Single Race Target Laps -------//
+
+//Name: Target Laps, Value=5
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,01FCBB55,extended,00000005
+
+//Name: Target Laps HUD, Value=5
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,01FA3F7C,extended,00000005
+
+//Name: Start Menu Target Laps, Value=5
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,01FCBE3C,extended,00000005
+
+//------- End Group: Single Race Target Laps -------//
+
+//------- Start group: Single Race AI Max Throttle -------//
+
+//Name: AI Max Throttle #1, Value=1
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FBFEF8,extended,3f800000
+
+//Name: AI Max Throttle #2, Value=1
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC15D4,extended,3f800000
+
+//Name: AI Max Throttle #3, Value=1
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC2CB0,extended,3f800000
+
+//Name: AI Max Throttle #4, Value=1
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC438C,extended,3f800000
+
+//Name: AI Max Throttle #5, Value=1
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC5A68,extended,3f800000
+
+//------- End Group: Single Race AI Max Throttle -------//
+
+//------- Start group: undefined -------//
+
+//Name: Lap 1 Rubberband AI#1, Value=1
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F78,extended,00000001
+patch=1,EE,21FC0460,extended,3f800000
+
+//Name: Lap 1 Rubberband AI#2, Value=1
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F78,extended,00000001
+patch=1,EE,21FC1B3C,extended,3f800000
+
+//Name: Lap 1 Rubberband AI#3, Value=1
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F78,extended,00000001
+patch=1,EE,21FC3218,extended,3f800000
+
+//Name: Lap 1 Rubberband AI#4, Value=1
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F78,extended,00000001
+patch=1,EE,21FC48F4,extended,3f800000
+
+//Name: Lap 1 Rubberband AI#5, Value=1
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F78,extended,00000001
+patch=1,EE,21FC5FD0,extended,3f800000
+
+//Name: Lap 2 Rubberband AI#1, Value=1.25
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F78,extended,00000002
+patch=1,EE,21FC0460,extended,3fa00000
+
+//Name: Lap 2 Rubberband AI#2, Value=1.25
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F78,extended,00000002
+patch=1,EE,21FC1B3C,extended,3fa00000
+
+//Name: Lap 2 Rubberband AI#3, Value=1.25
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F78,extended,00000002
+patch=1,EE,21FC3218,extended,3fa00000
+
+//Name: Lap 2 Rubberband AI#4, Value=1.25
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F78,extended,00000002
+patch=1,EE,21FC48F4,extended,3fa00000
+
+//Name: Lap 2 Rubberband AI#5, Value=1.25
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F78,extended,00000002
+patch=1,EE,21FC5FD0,extended,3fa00000
+
+//Name: Lap 3 Rubberband AI#1, Value=1.5
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F78,extended,00000003
+patch=1,EE,21FC0460,extended,3fc00000
+
+//Name: Lap 3 Rubberband AI#2, Value=1.5
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F78,extended,00000003
+patch=1,EE,21FC1B3C,extended,3fc00000
+
+//Name: Lap 3 Rubberband AI#3, Value=1.5
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F78,extended,00000003
+patch=1,EE,21FC3218,extended,3fc00000
+
+//Name: Lap 3 Rubberband AI#4, Value=1.5
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F78,extended,00000003
+patch=1,EE,21FC48F4,extended,3fc00000
+
+//Name: Lap 3 Rubberband AI#5, Value=1.5
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F78,extended,00000003
+patch=1,EE,21FC5FD0,extended,3fc00000
+
+//Name: Lap 4 Rubberband AI#1, Value=1.75
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F78,extended,00000004
+patch=1,EE,21FC0460,extended,3fe00000
+
+//Name: Lap 4 Rubberband AI#2, Value=1.75
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F78,extended,00000004
+patch=1,EE,21FC1B3C,extended,3fe00000
+
+//Name: Lap 4 Rubberband AI#3, Value=1.75
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F78,extended,00000004
+patch=1,EE,21FC3218,extended,3fe00000
+
+//Name: Lap 4 Rubberband AI#4, Value=1.75
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F78,extended,00000004
+patch=1,EE,21FC48F4,extended,3fe00000
+
+//Name: Lap 4 Rubberband AI#5, Value=1.75
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F78,extended,00000004
+patch=1,EE,21FC5FD0,extended,3fe00000
+
+//Name: Lap 5 Rubberband AI#1, Value=2
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F78,extended,00000005
+patch=1,EE,21FC0460,extended,40000000
+
+//Name: Lap 5 Rubberband AI#2, Value=2
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F78,extended,00000005
+patch=1,EE,21FC1B3C,extended,40000000
+
+//Name: Lap 5 Rubberband AI#3, Value=2
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F78,extended,00000005
+patch=1,EE,21FC3218,extended,40000000
+
+//Name: Lap 5 Rubberband AI#4, Value=2
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F78,extended,00000005
+patch=1,EE,21FC48F4,extended,40000000
+
+//Name: Lap 5 Rubberband AI#5, Value=2
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F78,extended,00000005
+patch=1,EE,21FC5FD0,extended,40000000
+
+//------- End Group: undefined -------//
+
