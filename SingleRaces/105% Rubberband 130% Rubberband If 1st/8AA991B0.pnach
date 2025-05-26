@@ -1,0 +1,193 @@
+gametitle=Gran Turismo 3 [PBPX_955.03;1]NTSC [8AA991B0]
+
+//test unused byte addresss? 00350AF0(works)
+//if single race tick hits 1, set our test byte to 1
+patch=1,EE,D1F978FC,extended,00000001
+patch=1,EE,00350AF0,extended,00000001
+
+//if championship race tick hits 1, set our test byte to 2
+patch=1,EE,D1F9685C,extended,00000001
+patch=1,EE,00350AF0,extended,00000002
+//------- Start group: Single Race AI Max Throttle -------//
+
+//Name: AI Max Throttle #1, Value=1
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FBFEF8,extended,3f800000
+
+//Name: AI Max Throttle #2, Value=1
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC15D4,extended,3f800000
+
+//Name: AI Max Throttle #3, Value=1
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC2CB0,extended,3f800000
+
+//Name: AI Max Throttle #4, Value=1
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC438C,extended,3f800000
+
+//Name: AI Max Throttle #5, Value=1
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FC5A68,extended,3f800000
+
+//------- End Group: Single Race AI Max Throttle -------//
+
+//------- Start group: undefined -------//
+
+//Name: If player/camera 6 Position set all Rubberband AI#1, Value=1.05
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F9C,extended,00000006
+patch=1,EE,21FC0460,extended,3f866666
+
+//Name: If player/camera 6 Position set all Rubberband AI#2, Value=1.05
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F9C,extended,00000006
+patch=1,EE,21FC1B3C,extended,3f866666
+
+//Name: If player/camera 6 Position set all Rubberband AI#3, Value=1.05
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F9C,extended,00000006
+patch=1,EE,21FC3218,extended,3f866666
+
+//Name: If player/camera 6 Position set all Rubberband AI#4, Value=1.05
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F9C,extended,00000006
+patch=1,EE,21FC48F4,extended,3f866666
+
+//Name: If player/camera 6 Position set all Rubberband AI#5, Value=1.05
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F9C,extended,00000006
+patch=1,EE,21FC5FD0,extended,3f866666
+
+//Name: If player/camera 5 Position set all Rubberband AI#1, Value=1.05
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F9C,extended,00000005
+patch=1,EE,21FC0460,extended,3f866666
+
+//Name: If player/camera 5 Position set all Rubberband AI#2, Value=1.05
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F9C,extended,00000005
+patch=1,EE,21FC1B3C,extended,3f866666
+
+//Name: If player/camera 5 Position set all Rubberband AI#3, Value=1.05
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F9C,extended,00000005
+patch=1,EE,21FC3218,extended,3f866666
+
+//Name: If player/camera 5 Position set all Rubberband AI#4, Value=1.05
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F9C,extended,00000005
+patch=1,EE,21FC48F4,extended,3f866666
+
+//Name: If player/camera 5 Position set all Rubberband AI#5, Value=1.05
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F9C,extended,00000005
+patch=1,EE,21FC5FD0,extended,3f866666
+
+//Name: If player/camera 4 Position set all Rubberband AI#1, Value=1.05
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F9C,extended,00000004
+patch=1,EE,21FC0460,extended,3f866666
+
+//Name: If player/camera 4 Position set all Rubberband AI#2, Value=1.05
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F9C,extended,00000004
+patch=1,EE,21FC1B3C,extended,3f866666
+
+//Name: If player/camera 4 Position set all Rubberband AI#3, Value=1.05
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F9C,extended,00000004
+patch=1,EE,21FC3218,extended,3f866666
+
+//Name: If player/camera 4 Position set all Rubberband AI#4, Value=1.05
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F9C,extended,00000004
+patch=1,EE,21FC48F4,extended,3f866666
+
+//Name: If player/camera 4 Position set all Rubberband AI#5, Value=1.05
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F9C,extended,00000004
+patch=1,EE,21FC5FD0,extended,3f866666
+
+//Name: If player/camera 3 Position set all Rubberband AI#1, Value=1.05
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F9C,extended,00000003
+patch=1,EE,21FC0460,extended,3f866666
+
+//Name: If player/camera 3 Position set all Rubberband AI#2, Value=1.05
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F9C,extended,00000003
+patch=1,EE,21FC1B3C,extended,3f866666
+
+//Name: If player/camera 3 Position set all Rubberband AI#3, Value=1.05
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F9C,extended,00000003
+patch=1,EE,21FC3218,extended,3f866666
+
+//Name: If player/camera 3 Position set all Rubberband AI#4, Value=1.05
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F9C,extended,00000003
+patch=1,EE,21FC48F4,extended,3f866666
+
+//Name: If player/camera 3 Position set all Rubberband AI#5, Value=1.05
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F9C,extended,00000003
+patch=1,EE,21FC5FD0,extended,3f866666
+
+//Name: If player/camera 2 Position set all Rubberband AI#1, Value=1.05
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F9C,extended,00000002
+patch=1,EE,21FC0460,extended,3f866666
+
+//Name: If player/camera 2 Position set all Rubberband AI#2, Value=1.05
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F9C,extended,00000002
+patch=1,EE,21FC1B3C,extended,3f866666
+
+//Name: If player/camera 2 Position set all Rubberband AI#3, Value=1.05
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F9C,extended,00000002
+patch=1,EE,21FC3218,extended,3f866666
+
+//Name: If player/camera 2 Position set all Rubberband AI#4, Value=1.05
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F9C,extended,00000002
+patch=1,EE,21FC48F4,extended,3f866666
+
+//Name: If player/camera 2 Position set all Rubberband AI#5, Value=1.05
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F9C,extended,00000002
+patch=1,EE,21FC5FD0,extended,3f866666
+
+//Name: If player/camera 1 Position set all Rubberband AI#1, Value=1.3
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F9C,extended,00000001
+patch=1,EE,21FC0460,extended,3fa66666
+
+//Name: If player/camera 1 Position set all Rubberband AI#2, Value=1.3
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F9C,extended,00000001
+patch=1,EE,21FC1B3C,extended,3fa66666
+
+//Name: If player/camera 1 Position set all Rubberband AI#3, Value=1.3
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F9C,extended,00000001
+patch=1,EE,21FC3218,extended,3fa66666
+
+//Name: If player/camera 1 Position set all Rubberband AI#4, Value=1.3
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F9C,extended,00000001
+patch=1,EE,21FC48F4,extended,3fa66666
+
+//Name: If player/camera 1 Position set all Rubberband AI#5, Value=1.3
+//Change value only if this address matches target value
+patch=1,EE,D1FA3F9C,extended,00000001
+patch=1,EE,21FC5FD0,extended,3fa66666
+
+//------- End Group: undefined -------//
+

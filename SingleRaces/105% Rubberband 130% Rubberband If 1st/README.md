@@ -1,0 +1,1 @@
+AI have handicaps removed and get 105% rubberband unless the player is in 1st place they get 130% rubberband.
