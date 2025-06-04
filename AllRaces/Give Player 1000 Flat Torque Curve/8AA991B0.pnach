@@ -1,0 +1,178 @@
+gametitle=Gran Turismo 3 [PBPX_955.03;1]NTSC [8AA991B0]
+
+//test unused byte addresss? 00350AF0(works)
+//if single race tick hits 1, set our test byte to 1
+patch=1,EE,D1F978FC,extended,00000001
+patch=1,EE,00350AF0,extended,00000001
+
+//if championship race tick hits 1, set our test byte to 2
+patch=1,EE,D1F9685C,extended,00000001
+patch=1,EE,00350AF0,extended,00000002
+//------- Start group: Single Race Player Torque Curve -------//
+
+//Name: Torque #1, Value=1000
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FBDA70,extended,447a0000
+
+//Name: Torque #2, Value=1000
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FBDA74,extended,447a0000
+
+//Name: Torque #3, Value=1000
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FBDA78,extended,447a0000
+
+//Name: Torque #4, Value=1000
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FBDA7C,extended,447a0000
+
+//Name: Torque #5, Value=1000
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FBDA80,extended,447a0000
+
+//Name: Torque #6, Value=1000
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FBDA84,extended,447a0000
+
+//Name: Torque #7, Value=1000
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FBDA88,extended,447a0000
+
+//Name: Torque #8, Value=1000
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FBDA8C,extended,447a0000
+
+//Name: Torque #9, Value=1000
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FBDA90,extended,447a0000
+
+//Name: Torque #10, Value=1000
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FBDA94,extended,447a0000
+
+//Name: Torque #11, Value=1000
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FBDA98,extended,447a0000
+
+//Name: Torque #12, Value=1000
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FBDA9C,extended,447a0000
+
+//Name: Torque #13, Value=1000
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FBDAA0,extended,447a0000
+
+//Name: Torque #14, Value=1000
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FBDAA4,extended,447a0000
+
+//Name: Torque #15, Value=1000
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FBDAA8,extended,447a0000
+
+//Name: Torque #16, Value=1000
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000001
+patch=1,EE,21FBDAAC,extended,447a0000
+
+//------- End Group: Single Race Player Torque Curve -------//
+
+//------- Start group: Championship Race Player Torque Curve -------//
+
+//Name: Torque #1, Value=1000
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FBCA2C,extended,447a0000
+
+//Name: Torque #2, Value=1000
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FBCA30,extended,447a0000
+
+//Name: Torque #3, Value=1000
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FBCA34,extended,447a0000
+
+//Name: Torque #4, Value=1000
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FBCA38,extended,447a0000
+
+//Name: Torque #5, Value=1000
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FBCA3C,extended,447a0000
+
+//Name: Torque #6, Value=1000
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FBCA40,extended,447a0000
+
+//Name: Torque #7, Value=1000
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FBCA44,extended,447a0000
+
+//Name: Torque #8, Value=1000
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FBCA48,extended,447a0000
+
+//Name: Torque #9, Value=1000
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FBCA4C,extended,447a0000
+
+//Name: Torque #10, Value=1000
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FBCA50,extended,447a0000
+
+//Name: Torque #11, Value=1000
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FBCA54,extended,447a0000
+
+//Name: Torque #12, Value=1000
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FBCA58,extended,447a0000
+
+//Name: Torque #13, Value=1000
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FBCA5C,extended,447a0000
+
+//Name: Torque #14, Value=1000
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FBCA60,extended,447a0000
+
+//Name: Torque #15, Value=1000
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FBCA64,extended,447a0000
+
+//Name: Torque #16, Value=1000
+//Change value only if this address matches target value
+patch=1,EE,D0350AF0,extended,00000002
+patch=1,EE,21FBCA67,extended,447a0000
+
+//------- End Group: Championship Race Player Torque Curve -------//
+
