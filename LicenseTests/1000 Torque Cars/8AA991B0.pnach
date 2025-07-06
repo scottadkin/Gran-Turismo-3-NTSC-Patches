@@ -1,0 +1,54 @@
+gametitle=Gran Turismo 3 [PBPX_955.03;1]NTSC [8AA991B0]
+
+//------- Start group: License Test Torque Curve -------//
+
+//Name: Torque #1, Value=1000
+patch=1,EE,21FF1610,extended,447a0000
+
+//Name: Torque #2, Value=1000
+patch=1,EE,21FF1614,extended,447a0000
+
+//Name: Torque #3, Value=1000
+patch=1,EE,21FF1618,extended,447a0000
+
+//Name: Torque #4, Value=1000
+patch=1,EE,21FF161C,extended,447a0000
+
+//Name: Torque #5, Value=1000
+patch=1,EE,21FF1620,extended,447a0000
+
+//Name: Torque #6, Value=1000
+patch=1,EE,21FF1624,extended,447a0000
+
+//Name: Torque #7, Value=1000
+patch=1,EE,21FF1628,extended,447a0000
+
+//Name: Torque #8, Value=1000
+patch=1,EE,21FF162C,extended,447a0000
+
+//Name: Torque #9, Value=1000
+patch=1,EE,21FF1630,extended,447a0000
+
+//Name: Torque #10, Value=1000
+patch=1,EE,21FF1634,extended,447a0000
+
+//Name: Torque #11, Value=1000
+patch=1,EE,21FF1638,extended,447a0000
+
+//Name: Torque #12, Value=1000
+patch=1,EE,21FF163C,extended,447a0000
+
+//Name: Torque #13, Value=1000
+patch=1,EE,21FF1640,extended,447a0000
+
+//Name: Torque #14, Value=1000
+patch=1,EE,21FF1644,extended,447a0000
+
+//Name: Torque #15, Value=1000
+patch=1,EE,21FF1648,extended,447a0000
+
+//Name: Torque #16, Value=1000
+patch=1,EE,21FF164C,extended,447a0000
+
+//------- End Group: License Test Torque Curve -------//
+
