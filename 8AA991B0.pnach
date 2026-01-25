@@ -1,10 +1,22 @@
 gametitle=Gran Turismo 3 [PBPX_955.03;1]NTSC [8AA991B0]
 
 //If AI has control of car in a license test use default values so AI doesn't fail before event starts
-[Physics\Crazy Grass]
+[Physics\Crazy Grass, Dirt, Sand]
 author=Ooper
 description=Gives grass crazy physics. Now license test safe.
 patch=1,EE,20350548,extended,C0A00000
 patch=1,EE,D1FF2934,extended,01000001
 patch=1,EE,20350548,extended,3ca3d709
+
+
+//If AI has control of car in a license test use default values so AI doesn't fail before event starts
+[License Tests\Crazy Kerbs]
+author=Ooper
+description=Gives kerbs crazy physics.
+patch=1,EE,21FF1D4C,extended,c57a0000
+patch=1,EE,21FF1830,extended,c57a0000
+patch=1,EE,D1FF2934,extended,02000001
+patch=1,EE,21FF1D4C,extended,3fa70a3c
+patch=1,EE,21FF1830,extended,3fa70a3c
+
 

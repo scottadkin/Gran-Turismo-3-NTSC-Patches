@@ -1,7 +1,7 @@
 ## Various Gran Turismo 3 NTSC Patches
 
 ## New Patches
-After learning how to properly do the newer patches I will most likely be adding all cheats into a single file as you can toggle on and off what cheats you want to use. You can find the new patch file in the current directory as **8AA991B0.pnach**.
+After learning how to properly do the newer patches I will most likely be adding all cheats into a single file as you can toggle on and off what cheats you want to use. You can find the new patch file in the current directory **[8AA991B0.pnach](https://github.com/scottadkin/Gran-Turismo-3-NTSC-Patches/blob/main/8AA991B0.pnach)**.
 
 ## Old Patches
 These are the old format non toggleable patches:
