@@ -19,4 +19,12 @@ patch=1,EE,D1FF2934,extended,02000001
 patch=1,EE,21FF1D4C,extended,3fa70a3c
 patch=1,EE,21FF1830,extended,3fa70a3c
 
+//If AI has control of car in a license test use default values so AI doesn't fail before event starts
+[Physics\Angry Walls]
+author=Ooper
+description=Gives kerbs crazy physics.
+patch=1,EE,203506C0,extended,c00ccccd
+patch=1,EE,D1FF2934,extended,02000001
+patch=1,EE,203506C0,extended,bf866666
+
 
