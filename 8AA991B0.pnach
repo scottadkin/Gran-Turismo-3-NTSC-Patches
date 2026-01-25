@@ -1,10 +1,12 @@
 gametitle=Gran Turismo 3 [PBPX_955.03;1]NTSC [8AA991B0]
 
-//If AI has control of car in a license test use default values so AI doesn't fail before event starts
+//Set grass value to crazy value if AI doesn't have control in a license test, fallback if race timer hits 50 set the AI License Auto Drive value to 0 to prevent cheat not working in races if you leave a test while the AI still has control
 [Physics\Crazy Grass, Dirt, Sand]
 author=Ooper
 description=Gives grass crazy physics. Now license test safe.
 patch=1,EE,20350548,extended,C0A00000
+patch=1,EE,D1FCBB94,extended,01000032
+patch=1,EE,01FF2934,extended,01000000
 patch=1,EE,D1FF2934,extended,01000001
 patch=1,EE,20350548,extended,3ca3d709
 
@@ -14,11 +16,13 @@ description=Return back to normal value.
 patch=1,EE,20350548,extended,3ca3d709
 
 //default bf866666, angry walls c00ccccd
-//If AI has control of car in a license test use default values so AI doesn't fail before event starts
+//set crazy wall value if AI doesn't have control in a license test, fallback if race timer hits 50 set the AI License Auto Drive value to 0 to prevent cheat not working in races if you leave a test while the AI still has control
 [Physics\Angry Walls]
 author=Ooper
 description=Walls have a much stronger pushback when hit.
 patch=1,EE,203506C0,extended,c00ccccd
+patch=1,EE,D1FCBB94,extended,01000032
+patch=1,EE,01FF2934,extended,01000000
 patch=1,EE,D1FF2934,extended,02000001
 patch=1,EE,203506C0,extended,bf866666
 
