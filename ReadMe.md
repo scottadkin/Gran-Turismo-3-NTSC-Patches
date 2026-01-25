@@ -12,3 +12,5 @@ These are the old format non toggleable patches:
 - 25/01/2026: Crazy grass now uses the game's default values if the AI has control of the car in license tests so you no longer fail the test before it begins on the few tests that were impossible before. This includes the rally tests.
 - 25/01/2026: Crazy Kerbs Licenses Tests now only applies once player has control of the car.
 - 25/01/2026: Angry Walls is now safe for license tests when AI has control of the car.
+- 25/01/2026: Added various power multipliers
+- 25/01/2026 Added Gravity to new patches, also added normal values for various effects.

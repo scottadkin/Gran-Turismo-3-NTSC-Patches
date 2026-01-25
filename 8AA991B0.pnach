@@ -8,7 +8,56 @@ patch=1,EE,20350548,extended,C0A00000
 patch=1,EE,D1FF2934,extended,01000001
 patch=1,EE,20350548,extended,3ca3d709
 
+[Physics\Normal Grass, Dirt, Sand]
+author=Ooper
+description=Return back to normal value.
+patch=1,EE,20350548,extended,3ca3d709
 
+
+//default bf866666, angry walls c00ccccd
+//If AI has control of car in a license test use default values so AI doesn't fail before event starts
+[Physics\Angry Walls]
+author=Ooper
+description=Walls have a much stronger pushback when hit.
+patch=1,EE,203506C0,extended,c00ccccd
+patch=1,EE,D1FF2934,extended,02000001
+patch=1,EE,203506C0,extended,bf866666
+
+[Physics\Normal Walls]
+author=Ooper
+description=Normal walls physics.
+patch=1,EE,203506C0,extended,bf866666
+
+
+[Physics\Gravity\Earth]
+author=Ooper
+description=Return gravity back to normal.
+patch=1,EE,20350544,extended,411ccccd
+
+[Physics\Gravity\Sun]
+author=Ooper
+description=Change the gravity to match that of the Sun.
+patch=1,EE,20350544,extended,43890000
+
+[Physics\Gravity\Moon]
+author=Ooper
+description=Change the gravity to match that of the Moon.
+patch=1,EE,20350544,extended,3fd00000
+
+[Physics\Gravity\Jupiter]
+author=Ooper
+description=Change the gravity to match that of Jupiter.
+patch=1,EE,20350544,extended,41c651ec
+
+[Physics\Gravity\Zero Gravity]
+author=Ooper
+description=Turn off gravity.
+patch=1,EE,20350544,extended,00000000
+
+
+
+
+//default 3fa70a3c
 //If AI has control of car in a license test use default values so AI doesn't fail before event starts
 [License Tests\Crazy Kerbs]
 author=Ooper
@@ -19,13 +68,11 @@ patch=1,EE,D1FF2934,extended,02000001
 patch=1,EE,21FF1D4C,extended,3fa70a3c
 patch=1,EE,21FF1830,extended,3fa70a3c
 
-//If AI has control of car in a license test use default values so AI doesn't fail before event starts
-[Physics\Angry Walls]
+
+[License Tests\Normal Kerbs]
 author=Ooper
-description=Gives kerbs crazy physics.
-patch=1,EE,203506C0,extended,c00ccccd
-patch=1,EE,D1FF2934,extended,02000001
-patch=1,EE,203506C0,extended,bf866666
+description=Returns Kerbs back to normal.
+patch=1,EE,21FF1D4C,extended,3fa70a3c
 
 
 [Power\10% Power For All Cars]
@@ -57,6 +104,22 @@ patch=1,EE,20350324,extended,3be21966
 author=Ooper
 description=All cars and upgrades in the game will have their normal power(Toggle when in a menu not during a race).
 patch=1,EE,20350324,extended,3a83126f
+
+
+[Power\125% Power For All Cars]
+author=Ooper
+description=All cars and upgrades in the game will have 25% more power(Toggle when in a menu not during a race).
+patch=1,EE,20350324,extended,3aa3d70b
+
+[Power\150% Power For All Cars]
+author=Ooper
+description=All cars and upgrades in the game will have 50% more power(Toggle when in a menu not during a race).
+patch=1,EE,20350324,extended,3ac49ba6
+
+[Power\175% Power For All Cars]
+author=Ooper
+description=All cars and upgrades in the game will have 75% more power(Toggle when in a menu not during a race).
+patch=1,EE,20350324,extended,3ae56042
 
 [Power\2x Power For All Cars]
 author=Ooper
@@ -158,4 +221,5 @@ patch=1,EE,20350324,extended,42c80001
 author=Ooper
 description=All cars and upgrades in the game will have 1 Million times their normal power(Toggle when in a menu not during a race).
 patch=1,EE,20350324,extended,447a0001
+
 
