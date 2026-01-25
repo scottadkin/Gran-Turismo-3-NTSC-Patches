@@ -29,6 +29,72 @@ description=Normal walls physics.
 patch=1,EE,203506C0,extended,bf866666
 
 
+[Physics\Grip\50%]
+author=Ooper
+description=Set global grip scale to 50% of it's normal value.
+patch=1,EE,203501D4,extended,3a03126f
+
+[Physics\Grip\Normal]
+author=Ooper
+description=Return global grip scale back to normal.
+patch=1,EE,203501D4,extended,3a83126f
+
+[Physics\Grip\125%]
+author=Ooper
+description=Set global grip scale to 125% of it's normal value.
+patch=1,EE,203501D4,extended,3aa3d70b
+
+
+[Physics\Grip\150%]
+author=Ooper
+description=Set global grip scale to 150% of it's normal value.
+patch=1,EE,203501D4,extended,3ac49ba6
+
+[Physics\Grip\175%]
+author=Ooper
+description=Set global grip scale to 175% of it's normal value.
+patch=1,EE,203501D4,extended,3ae56042
+
+[Physics\Grip\200%]
+author=Ooper
+description=Set global grip scale to 200% of it's normal value.
+patch=1,EE,203501D4,extended,3b03126f
+
+[Physics\Grip\250%]
+author=Ooper
+description=Set global grip scale to 250% of it's normal value.
+patch=1,EE,203501D4,extended,3b23d70b
+
+[Physics\Grip\300%]
+author=Ooper
+description=Set global grip scale to 300% of it's normal value.
+patch=1,EE,203501D4,extended,3b449ba6
+
+[Physics\Grip\400%]
+author=Ooper
+description=Set global grip scale to 400% of it's normal value.
+patch=1,EE,203501D4,extended,3b83126f
+
+[Physics\Grip\500%]
+author=Ooper
+description=Set global grip scale to 500% of it's normal value.
+patch=1,EE,203501D4,extended,3ba3d70b
+
+[Physics\Grip\600%]
+author=Ooper
+description=Set global grip scale to 600% of it's normal value.
+patch=1,EE,203501D4,extended,3bc49ba6
+
+[Physics\Grip\750%]
+author=Ooper
+description=Set global grip scale to 750% of it's normal value.
+patch=1,EE,203501D4,extended,3bf5c290
+
+[Physics\Grip\1000%]
+author=Ooper
+description=Set global grip scale to 1000% of it's normal value.
+patch=1,EE,203501D4,extended,3c23d70b
+
 [Physics\Gravity\Earth]
 author=Ooper
 description=Return gravity back to normal.
