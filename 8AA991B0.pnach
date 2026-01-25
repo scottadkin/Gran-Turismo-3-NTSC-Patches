@@ -28,3 +28,134 @@ patch=1,EE,D1FF2934,extended,02000001
 patch=1,EE,203506C0,extended,bf866666
 
 
+[Power\10% Power For All Cars]
+author=Ooper
+description=All cars and upgrades in the game will only have 10% of their normal power(Toggle when in a menu not during a race).
+patch=1,EE,20350324,extended,38d1b717
+
+[Power\25% Power For All Cars]
+author=Ooper
+description=All cars and upgrades in the game will only have 25% of their normal power(Toggle when in a menu not during a race).
+patch=1,EE,20350324,extended,3983126f
+
+[Power\50% Power For All Cars]
+author=Ooper
+description=All cars and upgrades in the game will only have 50% of their normal power(Toggle when in a menu not during a race).
+patch=1,EE,20350324,extended,3a03126f
+
+[Power\67% Power For All Cars]
+author=Ooper
+description=All cars and upgrades in the game will only have 67% of their normal power(Toggle when in a menu not during a race).
+patch=1,EE,20350324,extended,3bdb8bad
+
+[Power\69% Power For All Cars]
+author=Ooper
+description=All cars and upgrades in the game will only have 69% of their normal power(Toggle when in a menu not during a race).
+patch=1,EE,20350324,extended,3be21966
+
+[Power\Normal Power]
+author=Ooper
+description=All cars and upgrades in the game will have their normal power(Toggle when in a menu not during a race).
+patch=1,EE,20350324,extended,3a83126f
+
+[Power\2x Power For All Cars]
+author=Ooper
+description=All cars and upgrades in the game will have 2 times their normal power(Toggle when in a menu not during a race).
+patch=1,EE,20350324,extended,3b03126f
+
+[Power\3x Power For All Cars]
+author=Ooper
+description=All cars and upgrades in the game will have 3 times their normal power(Toggle when in a menu not during a race).
+patch=1,EE,20350324,extended,3b449ba6
+
+[Power\4x Power For All Cars]
+author=Ooper
+description=All cars and upgrades in the game will have 4 times their normal power(Toggle when in a menu not during a race).
+patch=1,EE,20350324,extended,3b83126f
+
+[Power\5x Power For All Cars]
+author=Ooper
+description=All cars and upgrades in the game will have 5 times their normal power(Toggle when in a menu not during a race).
+patch=1,EE,20350324,extended,3ba3d70b
+
+[Power\6x Power For All Cars]
+author=Ooper
+description=All cars and upgrades in the game will have 6 times their normal power(Toggle when in a menu not during a race).
+patch=1,EE,20350324,extended,3bc49ba6
+
+[Power\7x Power For All Cars]
+author=Ooper
+description=All cars and upgrades in the game will have 7 times their normal power(Toggle when in a menu not during a race).
+patch=1,EE,20350324,extended,3be56042
+
+[Power\8x Power For All Cars]
+author=Ooper
+description=All cars and upgrades in the game will have 8 times their normal power(Toggle when in a menu not during a race).
+patch=1,EE,20350324,extended,3c03126f
+
+[Power\9x Power For All Cars]
+author=Ooper
+description=All cars and upgrades in the game will have 9 times their normal power(Toggle when in a menu not during a race).
+patch=1,EE,20350324,extended,3c1374bd
+
+[Power\10x Power For All Cars]
+author=Ooper
+description=All cars and upgrades in the game will have 10 times their normal power(Toggle when in a menu not during a race).
+patch=1,EE,20350324,extended,3c23d70b
+
+[Power\15x Power For All Cars]
+author=Ooper
+description=All cars and upgrades in the game will have 15 times their normal power(Toggle when in a menu not during a race).
+patch=1,EE,20350324,extended,3c75c290
+
+[Power\20x Power For All Cars]
+author=Ooper
+description=All cars and upgrades in the game will have 20 times their normal power(Toggle when in a menu not during a race).
+patch=1,EE,20350324,extended,3ca3d70b
+
+
+[Power\25x Power For All Cars]
+author=Ooper
+description=All cars and upgrades in the game will have 25 times their normal power(Toggle when in a menu not during a race).
+patch=1,EE,20350324,extended,3ccccccd
+
+[Power\50x Power For All Cars]
+author=Ooper
+description=All cars and upgrades in the game will have 50 times their normal power(Toggle when in a menu not during a race).
+patch=1,EE,20350324,extended,3d4ccccd
+
+[Power\67x Power For All Cars]
+author=Ooper
+description=All cars and upgrades in the game will have 67 times their normal power(Toggle when in a menu not during a race).
+patch=1,EE,20350324,extended,3d89374c
+
+[Power\69x Power For All Cars]
+author=Ooper
+description=All cars and upgrades in the game will have 69 times their normal power(Toggle when in a menu not during a race).
+patch=1,EE,20350324,extended,3d8d4fe0
+
+[Power\100x Power For All Cars]
+author=Ooper
+description=All cars and upgrades in the game will have 100 times their normal power(Toggle when in a menu not during a race).
+patch=1,EE,20350324,extended,3dcccccd
+
+[Power\1000x Power For All Cars]
+author=Ooper
+description=All cars and upgrades in the game will have 1000 times their normal power(Toggle when in a menu not during a race).
+patch=1,EE,20350324,extended,3f800000
+
+[Power\10000x Power For All Cars]
+author=Ooper
+description=All cars and upgrades in the game will have 10000 times their normal power(Toggle when in a menu not during a race).
+patch=1,EE,20350324,extended,41200000
+
+[Power\100000x Power For All Cars]
+author=Ooper
+description=All cars and upgrades in the game will have 100000 times their normal power(Toggle when in a menu not during a race).
+patch=1,EE,20350324,extended,42c80001
+
+[Power\1000000x Power For All Cars]
+author=Ooper
+description=All cars and upgrades in the game will have 1 Million times their normal power(Toggle when in a menu not during a race).
+patch=1,EE,20350324,extended,447a0001
+
