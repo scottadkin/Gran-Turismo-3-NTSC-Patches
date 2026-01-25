@@ -13,7 +13,6 @@ author=Ooper
 description=Return back to normal value.
 patch=1,EE,20350548,extended,3ca3d709
 
-
 //default bf866666, angry walls c00ccccd
 //If AI has control of car in a license test use default values so AI doesn't fail before event starts
 [Physics\Angry Walls]
@@ -28,8 +27,7 @@ author=Ooper
 description=Normal walls physics.
 patch=1,EE,203506C0,extended,bf866666
 
-
-[Physics\Grip\50%]
+[Physics\Grip\0.50x Grip]
 author=Ooper
 description=Set global grip scale to 50% of it's normal value.
 patch=1,EE,203501D4,extended,3a03126f
@@ -39,58 +37,57 @@ author=Ooper
 description=Return global grip scale back to normal.
 patch=1,EE,203501D4,extended,3a83126f
 
-[Physics\Grip\125%]
+[Physics\Grip\1.25x Grip]
 author=Ooper
 description=Set global grip scale to 125% of it's normal value.
 patch=1,EE,203501D4,extended,3aa3d70b
 
-
-[Physics\Grip\150%]
+[Physics\Grip\1.5x Grip]
 author=Ooper
 description=Set global grip scale to 150% of it's normal value.
 patch=1,EE,203501D4,extended,3ac49ba6
 
-[Physics\Grip\175%]
+[Physics\Grip\1.75x Grip]
 author=Ooper
 description=Set global grip scale to 175% of it's normal value.
 patch=1,EE,203501D4,extended,3ae56042
 
-[Physics\Grip\200%]
+[Physics\Grip\2x Grip]
 author=Ooper
 description=Set global grip scale to 200% of it's normal value.
 patch=1,EE,203501D4,extended,3b03126f
 
-[Physics\Grip\250%]
+[Physics\Grip\2.5x Grip]
 author=Ooper
 description=Set global grip scale to 250% of it's normal value.
 patch=1,EE,203501D4,extended,3b23d70b
 
-[Physics\Grip\300%]
+[Physics\Grip\3x Grip]
 author=Ooper
 description=Set global grip scale to 300% of it's normal value.
 patch=1,EE,203501D4,extended,3b449ba6
 
-[Physics\Grip\400%]
+[Physics\Grip\4x Grip]
 author=Ooper
 description=Set global grip scale to 400% of it's normal value.
 patch=1,EE,203501D4,extended,3b83126f
 
-[Physics\Grip\500%]
+[Physics\Grip\5x Grip]
 author=Ooper
 description=Set global grip scale to 500% of it's normal value.
 patch=1,EE,203501D4,extended,3ba3d70b
 
-[Physics\Grip\600%]
+[Physics\Grip\6x Grip]
 author=Ooper
 description=Set global grip scale to 600% of it's normal value.
 patch=1,EE,203501D4,extended,3bc49ba6
 
-[Physics\Grip\750%]
+[Physics\Grip\7.5x Grip]
 author=Ooper
 description=Set global grip scale to 750% of it's normal value.
 patch=1,EE,203501D4,extended,3bf5c290
 
-[Physics\Grip\1000%]
+[Physics\Grip\10x Grip]
 author=Ooper
 description=Set global grip scale to 1000% of it's normal value.
 patch=1,EE,203501D4,extended,3c23d70b
