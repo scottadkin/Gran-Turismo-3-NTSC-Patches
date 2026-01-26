@@ -122,22 +122,22 @@ description=Turn off gravity.
 patch=1,EE,20350544,extended,00000000
 
 
-//Crazy kerbs For License tests, a default value 3fa70a3c, crazy value c57a0000
+//default 3fa70a3c, 41a00000 nerfed for seattle, crazy c57a0000
 //IF AI doesn't have control exec next 10 lines
 //set front to crazy
 //set rear to crazy
 //IF license group is 2(IB) Exec next 3 lines
 //If licensse test is 2(3 IB-3) Exec next 2 lines
-//Then set to normal front kerbs
-//and set to normal rear kerbs
+//Then set to alt crazy front kerbs
+//and set to alt crazy rear kerbs
+//IF license group is 4(S) Exec next 3 lines
+//If licensse test is 1(2 S-2) Exec next 2 lines
+//Then set to alt crazy front kerbs
+//and set to alt crazy rear kerbs
 //IF AI has control exec next 2 lines
 //Then set to normal front kerbs
 //and set to normal rear kerbs
-//IF license group is 4(S) Exec next 3 lines
-//If licensse test is 1(2 S-2) Exec next 2 lines
-//Then set to normal front kerbs
-//and set to normal rear kerbs
-[License Tests\Crazy Kerbs]
+[License Tests\Crazy Kerbs 3]
 author=Ooper
 description=Gives kerbs crazy physics.
 patch=1,EE,D1FF2934,extended,0A000000
@@ -145,15 +145,15 @@ patch=1,EE,21FF1830,extended,c57a0000
 patch=1,EE,21FF1D4C,extended,c57a0000
 patch=1,EE,D1FFFC00,extended,03000002
 patch=1,EE,D1FFFBF4,extended,02000002
-patch=1,EE,21FF1830,extended,3fa70a3c
-patch=1,EE,21FF1D4C,extended,3fa70a3c
+patch=1,EE,21FF1830,extended,41a00000
+patch=1,EE,21FF1D4C,extended,41a00000
+patch=1,EE,D1FFFC00,extended,03000004
+patch=1,EE,D1FFFBF4,extended,02000001
+patch=1,EE,21FF1D4C,extended,41a00000
+patch=1,EE,21FF1830,extended,41a00000
 patch=1,EE,D1FF2934,extended,02000001
 patch=1,EE,21FF1830,extended,3fa70a3c
 patch=1,EE,21FF1D4C,extended,3fa70a3c
-patch=1,EE,D1FFFC00,extended,03000004
-patch=1,EE,D1FFFBF4,extended,02000001
-patch=1,EE,21FF1D4C,extended,3fa70a3c
-patch=1,EE,21FF1830,extended,3fa70a3c
 
 
 [License Tests\Normal Kerbs]
