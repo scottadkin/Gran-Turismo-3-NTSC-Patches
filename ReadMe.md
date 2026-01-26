@@ -34,11 +34,16 @@ These are the old format non toggleable patches:
 - Zero Gravity
 - **Change in any menu, will not take effect if you change mid race.**
 
+### Crazy Kerbs For Simulation Mode Races
+- Makes the kerbs unusable, normally ending up with throwing your car in a random direction.
+- Wet kerbs are unaffected.
+- **Change before race start for the changes to take effect, patch relys on checking if race is a single event or championship event by checking if the race tick counter has hit 1 for either single race events or championship events.**
 
 ### Crazy Kerbs 3 For License Tests
-- Make the kerbs unusable, normally ending up with throwing your car in a random direction.
+- Makes the kerbs unusable, normally ending up with throwing your car in a random direction.
 - The AI auto drive in license tests now automatically gets given normal values to prevent fails before the test has even started. 
 - Seattle tests IB-3 And S-2 Now have different values to allow going over the tram tracks without it being a fail 100% of the time.
+- Wet kerbs are unaffected.
 - **Change at any point for the changes to take effect.**
 
 ### Global Power Multipliers

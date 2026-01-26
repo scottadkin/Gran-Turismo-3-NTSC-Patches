@@ -1,5 +1,47 @@
 gametitle=Gran Turismo 3 [PBPX_955.03;1]NTSC [8AA991B0]
 
+
+//0350AF0 test unused byte//single race ticks 1F978FC//championship race ticks 1F9685C
+//if single race ticks hit 1
+//set our test byte to 1
+//if championship tick hits 1
+//set our test byte to 2
+//if our byte is 1 exec next 12 lines(set front then rear kerb values for each player and AI single race addresses) else skip
+//if our byte is 2 exec next 12 lines(set front then rear kerb values for each player and AI championship race addresses) else end
+[Physics\Simulation Mode\Crazy Kerbs]
+author=Ooper
+description=Gives kerbs ridiculous properties, single, championship, endurance races.
+patch=1,EE,D1F978FC,extended,01000001
+patch=1,EE,00350AF0,extended,00000001
+patch=1,EE,D1F9685C,extended,01000001
+patch=1,EE,00350AF0,extended,00000002
+patch=1,EE,D0350AF0,extended,0C000001
+patch=1,EE,21FBDC90,extended,c57a0000
+patch=1,EE,21FBE1AC,extended,c57a0000
+patch=1,EE,21FBF36C,extended,c57a0000
+patch=1,EE,21FBF888,extended,c57a0000
+patch=1,EE,21FC0A48,extended,c57a0000
+patch=1,EE,21FC0F64,extended,c57a0000
+patch=1,EE,21FC2124,extended,c57a0000
+patch=1,EE,21FC2640,extended,c57a0000
+patch=1,EE,21FC3800,extended,c57a0000
+patch=1,EE,21FC3D1C,extended,c57a0000
+patch=1,EE,21FC4EDC,extended,c57a0000
+patch=1,EE,21FC53F8,extended,c57a0000
+patch=1,EE,D0350AF0,extended,0C000002
+patch=1,EE,21FBCC4C,extended,c57a0000
+patch=1,EE,21FBD168,extended,c57a0000
+patch=1,EE,21FBFA04,extended,c57a0000
+patch=1,EE,21FBFF20,extended,c57a0000
+patch=1,EE,21FBE328,extended,c57a0000
+patch=1,EE,21FBE844,extended,c57a0000
+patch=1,EE,21FC10E0,extended,c57a0000
+patch=1,EE,21FC15FC,extended,c57a0000
+patch=1,EE,21FC27BC,extended,c57a0000
+patch=1,EE,21FC2CD8,extended,c57a0000
+patch=1,EE,21FC3E98,extended,c57a0000
+patch=1,EE,21FC43B4,extended,c57a0000
+
 //Set grass value to crazy value if AI doesn't have control in a license test, fallback if race timer hits 50 set the AI License Auto Drive value to 0 to prevent cheat not working in races if you leave a test while the AI still has control
 [Physics\Crazy Grass, Dirt, Sand]
 author=Ooper
