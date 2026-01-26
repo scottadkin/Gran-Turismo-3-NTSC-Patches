@@ -12,6 +12,10 @@ These are the old format non toggleable patches:
 
 ## New Patch Cheats
 
+### Remove AI Rubberband(Simulation Mode)
+- Removes the rubberband from AI cars, they will no longer slow down if you fall behind and they won't speed up if you are far ahead. Not all events use this feature but it's heavily used in beginner league, and pretty much not used at all by professional league.
+- **Change before race start for the changes to take effect, patch relys on checking if race is a single event or championship event by checking if the race tick counter has hit 1 for either single race events or championship events.**
+
 ### Crazy Grass/Dirt/Sand Physics
 - Gives Grass/Dirt/Sand bizarre physics affecting all cars including AI.
 - The AI auto drive in license tests now automatically gets given normal values to prevent fails before the test has even started. Seattle is still impossible to complete when enabled.
