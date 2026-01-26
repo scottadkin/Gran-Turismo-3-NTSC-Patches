@@ -35,10 +35,10 @@ These are the old format non toggleable patches:
 - **Change in any menu, will not take effect if you change mid race.**
 
 
-### Crazy Kerbs For License Tests
+### Crazy Kerbs 3 For License Tests
 - Make the kerbs unusable, normally ending up with throwing your car in a random direction.
 - The AI auto drive in license tests now automatically gets given normal values to prevent fails before the test has even started. 
-- Seattle is still impossible to complete when enabled.
+- Seattle tests IB-3 And S-2 Now have different values to allow going over the tram tracks without it being a fail 100% of the time.
 - **Change at any point for the changes to take effect.**
 
 ### Global Power Multipliers
