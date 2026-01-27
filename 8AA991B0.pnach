@@ -168,15 +168,20 @@ patch=1,EE,20350544,extended,00000000
 //set our test byte to 1
 //if championship tick hits 1
 //set our test byte to 2
+//if arcade race tick hits 1
+//set our test byte to 6
 //if our byte is 1 exec next 5 lines(force all ai cars to 100% speed, no slowdown or speedup, Single Races) else skip
 //if our byte is 2 exec next 5 lines(force all ai cars to 100% speed, no slowdown or speedup, Championship Races) else skip
-[AI\Simulation Mode\Remove Rubberbanding]
+//if our byte is 6 exec next 5 lines(force all ai cars to 100% speed, no slowdown or speedup, Arcade Races) else skip
+[AI\Remove Rubberbanding]
 author=Ooper
 description=Removes rubberbanding.
 patch=1,EE,D1F978FC,extended,01000001
 patch=1,EE,00350AF0,extended,00000001
 patch=1,EE,D1F9685C,extended,01000001
 patch=1,EE,00350AF0,extended,00000002
+patch=1,EE,D1FAC35C,extended,01000001
+patch=1,EE,00350AF0,extended,00000006
 patch=1,EE,D0350AF0,extended,05000001
 patch=1,EE,21FC0460,extended,3f800000
 patch=1,EE,21FC1B3C,extended,3f800000
@@ -189,20 +194,32 @@ patch=1,EE,21FC0AF8,extended,3f800000
 patch=1,EE,21FC21D4,extended,3f800000
 patch=1,EE,21FC38B0,extended,3f800000
 patch=1,EE,21FC4F8C,extended,3f800000
+patch=1,EE,D0350AF0,extended,05000006
+patch=1,EE,21FBE340,extended,3f800000
+patch=1,EE,21FBFA1C,extended,3f800000
+patch=1,EE,21FC10F8,extended,3f800000
+patch=1,EE,21FC27D4,extended,3f800000
+patch=1,EE,21FC3EB0,extended,3f800000
+
 
 //if single race ticks hit 1
 //set our test byte to 1
 //if championship tick hits 1
 //set our test byte to 2
+//if arcade race tick hits 1
+//set our test byte to 6
 //if our byte is 1 exec next 5 lines(set AI max throttle value to 1, in easier events AI get limited max throttle levels, Single Races) else skip
 //if our byte is 2 exec next 5 lines(set AI max throttle value to 1, in easier events AI get limited max throttle levels, Championship Races) else skip
-[AI\Simulation Mode\Remove Max Throttle Handicaps]
+//if our byte is 6 exec next 5 lines(set AI max throttle value to 1, in easier events AI get limited max throttle levels, Arcade Races) else skip
+[AI\Remove Max Throttle Handicaps]
 author=Ooper
 description=Removes Max Throttle Handicaps AI cars have in easier events.
 patch=1,EE,D1F978FC,extended,01000001
 patch=1,EE,00350AF0,extended,00000001
 patch=1,EE,D1F9685C,extended,01000001
 patch=1,EE,00350AF0,extended,00000002
+patch=1,EE,D1FAC35C,extended,01000001
+patch=1,EE,00350AF0,extended,00000006
 patch=1,EE,D0350AF0,extended,05000001
 patch=1,EE,21FBFEF8,extended,3f800000
 patch=1,EE,21FC15D4,extended,3f800000
@@ -215,6 +232,12 @@ patch=1,EE,21FC0590,extended,3f800000
 patch=1,EE,21FC1C6C,extended,3f800000
 patch=1,EE,21FC3348,extended,3f800000
 patch=1,EE,21FC4A24,extended,3f800000
+patch=1,EE,D0350AF0,extended,05000006
+patch=1,EE,21FBDDD8,extended,3f800000
+patch=1,EE,21FBF4B4,extended,3f800000
+patch=1,EE,21FC0B90,extended,3f800000
+patch=1,EE,21FC226C,extended,3f800000
+patch=1,EE,21FC3948,extended,3f800000
 
 //default 3fa70a3c, 41a00000 nerfed for seattle, crazy c57a0000
 //IF AI doesn't have control exec next 10 lines

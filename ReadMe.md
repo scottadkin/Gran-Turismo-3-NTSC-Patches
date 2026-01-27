@@ -12,11 +12,11 @@ These are the old format non-toggleable patches:
 
 ## New Patch Cheats
 
-### Remove AI Rubberband(Simulation Mode)
+### Remove AI Rubberband(Simulation Mode & Arcade Races)
 - Removes the rubberband from AI cars, they will no longer slow down if you fall behind, and they won't speed up if you are far ahead. Not all events use this feature but it's heavily used in the beginner league, and pretty much not used at all by the professional league.
 - **Change before a race start for the changes to take effect. Patch relies on checking if a race is a single event or a championship event by checking if the race tick counter has hit 1 for either single race events or championship events.**
 
-### Remove AI Max Throttle Handicaps(Simulation Mode)
+### Remove AI Max Throttle Handicaps(Simulation Mode & Arcade Races)
 - Removes the Max Throttle limits from AI cars. Not all events use this feature but it's heavily used in the beginner league, and pretty much not used at all by the professional league.
 - **Change before a race start for the changes to take effect. Patch relies on checking if a race is a single event or a championship event by checking if the race tick counter has hit 1 for either single race events or championship events.**
 
@@ -73,3 +73,4 @@ These are the old format non-toggleable patches:
 - License test ticks **1FD0D0C** 
 - Machine test ticks **1FB728C**
 - Home -> test run ticks **1FC55BC**  
+- Arcade Race Ticks **21FAC35C**
