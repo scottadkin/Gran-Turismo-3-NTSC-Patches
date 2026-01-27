@@ -278,6 +278,29 @@ author=Ooper
 description=Returns Kerbs back to normal.
 patch=1,EE,21FF1D4C,extended,3fa70a3c
 
+//if single race ticks hit 1
+//set our test byte to 1
+//if championship tick hits 1
+//set our test byte to 2
+//if byte is 1(single race) else skip 2 lines
+//set max rpm to 17000
+//set rpm redline to 17000
+//if byte is 2(Championship race) else skip 2 lines
+//set max rpm to 17000
+//set rpm redline to 17000
+[RPM Limits\Simulation Mode\Give Player 17000RPM Limit On All Cars]
+author=Ooper
+description=Change player's car max RPM Limit to 17000, single, championship, endurance races.
+patch=1,EE,D1F978FC,extended,01000001
+patch=1,EE,00350AF0,extended,00000001
+patch=1,EE,D1F9685C,extended,01000001
+patch=1,EE,00350AF0,extended,00000002
+patch=1,EE,D0350AF0,extended,02000001
+patch=1,EE,11FBDAB0,extended,00004268
+patch=1,EE,11FBDB12,extended,00004268
+patch=1,EE,D0350AF0,extended,02000002
+patch=1,EE,11FBCA6C,extended,00004268
+patch=1,EE,11FBCACE,extended,00004268
 
 [Power\10% Power For All Cars]
 author=Ooper

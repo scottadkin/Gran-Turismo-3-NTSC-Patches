@@ -59,6 +59,8 @@ These are the old format non-toggleable patches:
 - Some Examples: 0.10x, 0.25x, 0.5x, 1.25x, 1.50x, 1.75x, 2x, 5x, 10x, 25x, 50x, 100x, and even up to 1 million times power.
 - **Change in any menu, will not take effect if you change mid race.**
 
+### RPM Limit Changers
+- Set your cars make RPM to 17000 in simulation mode, single races and championship races. Hud changes most of the time to the new RPM limit.
 
 ### Global Grip Multipliers
 - Adjust all cars' grip including AI.
