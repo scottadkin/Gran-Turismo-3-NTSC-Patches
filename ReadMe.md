@@ -61,3 +61,11 @@ These are the old format non-toggleable patches:
 - Higher values can cause unusual physics.
 - Some Examples: 50%, 100%, 125%, 150%, 200%, 300%, 500%, 750%, 1000%
 - **Change in any menu, will not take effect if you change mid race.**
+
+
+## Notes
+- Single race ticks **1F978FC** 
+- Championship race ticks **1F9685C**
+- License test ticks **1FD0D0C** 
+- Machine test ticks **1FB728C**
+- Home -> test run ticks **1FC55BC**  
