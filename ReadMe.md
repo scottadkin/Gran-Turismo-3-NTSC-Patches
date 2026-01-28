@@ -42,10 +42,10 @@ These are the old format non-toggleable patches:
 - Zero Gravity
 - **Change in any menu, will not take effect if you change mid race.**
 
-### Zero Drag Cheat
-- You can remove drag from all cars allowing for much higher top speeds without upgrades.
+### Air Resistance Modifier Cheats
+- You can scale all cars' downforce and drag values.
 - This affects all cars including AI.
-- There is also another cheat paired with this so you can restore back to normal.
+- 0x(No downforce or drag), 1x(normal), 2x(double all values), 3x,4x,5x,8x,10x
 - **Change in any menu, will not take effect if you change mid race.**
 
 

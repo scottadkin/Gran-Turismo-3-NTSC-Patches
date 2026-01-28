@@ -73,15 +73,45 @@ author=Ooper
 description=Normal walls physics.
 patch=1,EE,203506C0,extended,bf866666
 
-[Physics\Drag\Zero Drag]
+[Physics\Air Resistance\0 (Zero Downforce & Drag)]
 author=Ooper
-description=Remove drag from all vehicles.
+description=Set global air resistance value to 0, negative drag will not work with this enabled.
 patch=1,EE,203501E0,extended,00000000
 
-[Physics\Drag\Normal]
+[Physics\Air Resistance\Normal]
 author=Ooper
 description=Use the game's normal value.
 patch=1,EE,203501E0,extended,3c23d70a
+
+[Physics\Air Resistance\2x (2x Downforce & Drag)]
+author=Ooper
+description=Set global air resistance value to 2x it's normal value.
+patch=1,EE,203501E0,extended,3ca3d70a
+
+[Physics\Air Resistance\3x (3x Downforce & Drag)]
+author=Ooper
+description=Set global air resistance value to 3x it's normal value.
+patch=1,EE,203501E0,extended,3cf5c28f
+
+[Physics\Air Resistance\4x (4x Downforce & Drag)]
+author=Ooper
+description=Set global air resistance value to 4x it's normal value.
+patch=1,EE,203501E0,extended,3d23d70a
+
+[Physics\Air Resistance\5x (5x Downforce & Drag)]
+author=Ooper
+description=Set global air resistance value to 5x it's normal value.
+patch=1,EE,203501E0,extended,3d4ccccc
+
+[Physics\Air Resistance\8x (8x Downforce & Drag)]
+author=Ooper
+description=Set global air resistance value to 8x it's normal value.
+patch=1,EE,203501E0,extended,3da3d70a
+
+[Physics\Air Resistance\10x (10x Downforce & Drag)]
+author=Ooper
+description=Set global air resistance value to 10x it's normal value..
+patch=1,EE,203501E0,extended,3dcccccc
 
 [Physics\Grip\0.50x Grip]
 author=Ooper
