@@ -42,6 +42,13 @@ These are the old format non-toggleable patches:
 - Zero Gravity
 - **Change in any menu, will not take effect if you change mid race.**
 
+### Zero Drag Cheat
+- You can remove drag from all cars allowing for much higher top speeds without upgrades.
+- This affects all cars including AI.
+- There is also another cheat paired with this so you can restore back to normal.
+- **Change in any menu, will not take effect if you change mid race.**
+
+
 ### Crazy Kerbs For Simulation Mode Races
 - Makes the kerbs unusable, normally ending up with throwing your car in a random direction.
 - Wet kerbs are unaffected.

@@ -73,6 +73,16 @@ author=Ooper
 description=Normal walls physics.
 patch=1,EE,203506C0,extended,bf866666
 
+[Physics\Drag\Zero Drag]
+author=Ooper
+description=Remove drag from all vehicles.
+patch=1,EE,203501E0,extended,00000000
+
+[Physics\Drag\Normal]
+author=Ooper
+description=Use the game's normal value.
+patch=1,EE,203501E0,extended,3c23d70a
+
 [Physics\Grip\0.50x Grip]
 author=Ooper
 description=Set global grip scale to 50% of it's normal value.
