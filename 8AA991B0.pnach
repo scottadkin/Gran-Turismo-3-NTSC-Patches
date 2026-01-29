@@ -342,6 +342,56 @@ patch=1,EE,D0350AF0,extended,02000002
 patch=1,EE,11FBCA6C,extended,00004268
 patch=1,EE,11FBCACE,extended,00004268
 
+[Gear Ratio\Normal]
+author=Ooper
+description=Set global gear ratio scale to normal value
+patch=1,EE,20350380,extended,3a83126f
+
+[Gear Ratio\Longer 0.9x]
+author=Ooper
+description=Set global gear ratio scale to 90% of it's normal value.
+patch=1,EE,20350380,extended,3a6bedfb
+
+[Gear Ratio\Longer 0.8x]
+author=Ooper
+description=Set global gear ratio scale to 80% of it's normal value.
+patch=1,EE,20350380,extended,3a51b718
+
+[Gear Ratio\Longer 0.75x]
+author=Ooper
+description=Set global gear ratio scale to 75% of it's normal value.
+patch=1,EE,20350380,extended,3a449ba6
+
+[Gear Ratio\Longer 0.7x]
+author=Ooper
+description=Set global gear ratio scale to 70% of it's normal value.
+patch=1,EE,20350380,extended,3a378035
+
+[Gear Ratio\Longer 0.6x]
+author=Ooper
+description=Set global gear ratio scale to 60% of it's normal value.
+patch=1,EE,20350380,extended,3a1d4952
+
+[Gear Ratio\Longer 0.5x]
+author=Ooper
+description=Set global gear ratio scale to 50% of it's normal value.
+patch=1,EE,20350380,extended,3a03126f
+
+[Gear Ratio\Longer 0.33x]
+author=Ooper
+description=Set global gear ratio scale to 33% of it's normal value.
+patch=1,EE,20350380,extended,39ad03da
+
+[Gear Ratio\Longer 0.25x]
+author=Ooper
+description=Set global gear ratio scale to 25% of it's normal value.
+patch=1,EE,20350380,extended,3983126f
+
+[Gear Ratio\Longer 0.1x]
+author=Ooper
+description=Set global gear ratio scale to 10% of it's normal value.
+patch=1,EE,20350380,extended,38d1b717
+
 [Power\10% Power For All Cars]
 author=Ooper
 description=All cars and upgrades in the game will only have 10% of their normal power(Toggle when in a menu not during a race).

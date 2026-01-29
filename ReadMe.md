@@ -66,6 +66,11 @@ These are the old format non-toggleable patches:
 - Some Examples: 0.10x, 0.25x, 0.5x, 1.25x, 1.50x, 1.75x, 2x, 5x, 10x, 25x, 50x, 100x, and even up to 1 million times power.
 - **Change in any menu, will not take effect if you change mid race.**
 
+### Global Gear Ratio Multipliers
+- Adjust all cars' gear ratios including AI. Lower the value the longer the gears will be, 0.9x and 0.8x already make the gears much longer than normal, the lower numbers are only really needed if you have 100x-1000x power multipliers to be able to use them.
+- Examples: Normal, 0.9x, 0.8x, 0.75x, 0.7x, 0.6x, 0.5x, 0.33x, 0.25x, 0.1x.
+- **Change in any menu, will not take effect if you change mid race.**
+
 ### RPM Limit Changers
 - Set your cars make RPM to 17000 in simulation mode, single races and championship races. Hud changes most of the time to the new RPM limit.
 
