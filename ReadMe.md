@@ -77,9 +77,27 @@ These are the old format non-toggleable patches:
 
 
 ## Notes
+
+### Event ticks
 - Single race ticks **1F978FC** 
 - Championship race ticks **1F9685C**
 - License test ticks **1FD0D0C** 
 - Machine test ticks **1FB728C**
 - Home -> test run ticks **1FC55BC**  
 - Arcade Race Ticks **21FAC35C**
+
+### Track Ids address?
+Address = 209C41D2 2 bytes
+
+- Test Course = 241
+- Trial Mountain = 562
+- Deep Forest = 1032
+- Special Stage Route 11 = 1162
+- Special Stage Route 11 Reverse = 1165
+- Tokyo Route 246 = 1125
+- Monaco = 330
+- Grand Valley = 1127
+- Grand Valley Reverse = 1159
+- Super Speedway = 687
+- Trial Mountain Reverse = 531
+
