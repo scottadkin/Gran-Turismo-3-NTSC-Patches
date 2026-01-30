@@ -169,5 +169,7 @@ Address = 209C41D2 2 bytes
 - Trial Mountain(IA2 Test) = 551
 - Trial Mountain Reverse = 531
 
-
+# Car Prices
+- 4 Bytes for price
+- +4 Bytes from price is bCarLocked, set to 0 to be able to buy it
 
