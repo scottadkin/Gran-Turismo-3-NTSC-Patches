@@ -12,6 +12,9 @@ These are the old format non-toggleable patches:
 
 ## New Patch Cheats
 
+### Unlock All Cars In Car Dealer
+- Allows you to buy any of the locked cars for the car's original price.
+
 ### Remove AI Rubberband(Simulation Mode & Arcade Races)
 - Removes the rubberband from AI cars, they will no longer slow down if you fall behind, and they won't speed up if you are far ahead. Not all events use this feature but it's heavily used in the beginner league, and pretty much not used at all by the professional league.
 - **Change before a race start for the changes to take effect. Patch relies on checking if a race is a single event or a championship event by checking if the race tick counter has hit 1 for either single race events or championship events.**
@@ -172,4 +175,6 @@ Address = 209C41D2 2 bytes
 # Car Prices
 - 4 Bytes for price
 - +4 Bytes from price is bCarLocked, set to 0 to be able to buy it
+- First car price start at: **2086BE74**
+- 243 Cars with prices
 
