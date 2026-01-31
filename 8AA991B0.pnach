@@ -646,3 +646,48 @@ patch=1,EE,2086BE70,extended,01FB
 author=Ooper
 description=Buying the Audi S4 gives you Sample 010.
 patch=1,EE,2086BE70,extended,01FC
+
+[Car Dealer\Replace Audi S4\Mazda MX-5(Offset Japanese Plate)]
+author=Ooper
+description=Buying the Audi S4 gives you Mazda MX-5(Offset Japanese Plate).
+patch=1,EE,2086BE70,extended,0154
+
+[Car Dealer\Replace Audi S4\Mazda MX-5(Roll Cage + Japanese Plate)]
+author=Ooper
+description=Buying the Audi S4 gives you Mazda MX-5(Roll Cage + Japanese Plate).
+patch=1,EE,2086BE70,extended,015A
+
+[Car Dealer\Replace Audi S4\Mazda MX-5(Gran Turismo Plate)]
+author=Ooper
+description=Buying the Audi S4 gives you Mazda MX-5(Gran Turismo Plate).
+patch=1,EE,2086BE70,extended,0158
+
+[Car Dealer\Replace Audi S4\Nissan GT-R M-Spec]
+author=Ooper
+description=Buying the Audi S4 gives you Nissan GT-R M-Spec.
+patch=1,EE,2086BE70,extended,018F
+
+[Car Dealer\Replace Audi S4\Lamborghini Diablo]
+author=Ooper
+description=Buying the Audi S4 gives you Lamborghini Diablo.
+patch=1,EE,2086BE70,extended,0143
+
+[Car Dealer\Replace Audi S4\Lancia Stratos]
+author=Ooper
+description=Buying the Audi S4 gives you Lancia Stratos.
+patch=1,EE,2086BE70,extended,0144
+
+[Car Dealer\Replace Audi S4\Lancia Stratos Rally Car]
+author=Ooper
+description=Buying the Audi S4 gives you Lancia Stratos Rally Car.
+patch=1,EE,2086BE70,extended,0145
+
+[Car Dealer\Replace Audi S4\Porsche 911(996) GT3]
+author=Ooper
+description=Buying the Audi S4 gives you Porsche 911(996) GT3.
+patch=1,EE,2086BE70,extended,01EC
+
+[Car Dealer\Replace Audi S4\Lancer 6 Rally Car Special]
+author=Ooper
+description=Buying the Audi S4 gives you Lancer 6 Rally Car Special.
+patch=1,EE,2086BE70,extended,01FD

@@ -84,8 +84,28 @@ These are the old format non-toggleable patches:
 - **Change in any menu, will not take effect if you change mid race.**
 
 
-### Replace Buy Audi S4 With Sample 0XX
-- I've added cheats that allow you to buy any of the sample cars instead of the Audi S4.
+### Replace Buy Audi S4 With Hidden Cars
+- I've added cheats that allow you to buy any of the hidden cars instead of the Audi S4. (The showroom icon and car do not change)
+- Lamborghini Diablo
+- Lancia Stratos
+- Lancia Stratos Rally Car
+- Nissan GT-R M-Spec
+- Porsche 911(996) GT3
+- Mazda MX-5(Offset Japanese Plate)
+- Mazda MX-5(Roll Cage + Japanese Plate)
+- Mazda MX-5(Gran Turismo Plate)
+- Lancer 6 Rally Car Special(looks the same as the normal one but you cant upgrade it)
+- Sample 001 (RX7 Race Car 17000RPM)
+- Sample 002 (Yellow TVR)
+- Sample 003 (Acura RSX)
+- Sample 004 (Grey/Green TVR)
+- Sample 005 (White Acura RSX)
+- Sample 006 (Weird sphears)
+- Sample 007 (White Acura RSX)
+- Sample 008 (Blue Acura RSX)
+- Sample 009 (White TVR)
+- Sample 010 (F1)
+
 
 ## Notes
 
