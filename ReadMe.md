@@ -84,6 +84,9 @@ These are the old format non-toggleable patches:
 - **Change in any menu, will not take effect if you change mid race.**
 
 
+### Replace Buy Audi S4 With Sample 0XX
+- I've added cheats that allow you to buy any of the sample cars instead of the Audi S4.
+
 ## Notes
 
 ### Event ticks

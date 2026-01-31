@@ -595,3 +595,54 @@ patch=1,EE,0087a158,extended,00
 patch=1,EE,0087a260,extended,00
 patch=1,EE,0087aba8,extended,00
 patch=1,EE,0087b1d8,extended,00
+
+[Car Dealer\Replace Audi S4\Sample 001(RX7 Race Car 17000RPM)]
+author=Ooper
+description=Buying the Audi S4 gives you Sample 001.
+patch=1,EE,2086BE70,extended,01F3
+
+[Car Dealer\Replace Audi S4\Sample 002(Yellow TVR)]
+author=Ooper
+description=Buying the Audi S4 gives you Sample 002.
+patch=1,EE,2086BE70,extended,01F4
+
+[Car Dealer\Replace Audi S4\Sample 003(Acura RSX)]
+author=Ooper
+description=Buying the Audi S4 gives you Sample 003.
+patch=1,EE,2086BE70,extended,01F5
+
+[Car Dealer\Replace Audi S4\Sample 004(Grey/Green TVR)]
+author=Ooper
+description=Buying the Audi S4 gives you Sample 004.
+patch=1,EE,2086BE70,extended,01F6
+
+
+[Car Dealer\Replace Audi S4\Sample 005(White Acura RSX)]
+author=Ooper
+description=Buying the Audi S4 gives you Sample 005.
+patch=1,EE,2086BE70,extended,01F7
+
+[Car Dealer\Replace Audi S4\Sample 006(Weird sphears)]
+author=Ooper
+description=Buying the Audi S4 gives you Sample 006.
+patch=1,EE,2086BE70,extended,01F8
+
+[Car Dealer\Replace Audi S4\Sample 007(White Acura RSX)]
+author=Ooper
+description=Buying the Audi S4 gives you Sample 007.
+patch=1,EE,2086BE70,extended,01F9
+
+[Car Dealer\Replace Audi S4\Sample 008(Blue Acura RSX)]
+author=Ooper
+description=Buying the Audi S4 gives you Sample 008.
+patch=1,EE,2086BE70,extended,01FA
+
+[Car Dealer\Replace Audi S4\Sample 009(White TVR)]
+author=Ooper
+description=Buying the Audi S4 gives you Sample 009.
+patch=1,EE,2086BE70,extended,01FB
+
+[Car Dealer\Replace Audi S4\Sample 010(F1)]
+author=Ooper
+description=Buying the Audi S4 gives you Sample 010.
+patch=1,EE,2086BE70,extended,01FC
