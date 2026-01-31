@@ -195,9 +195,18 @@ Address = 209C41D2 2 bytes
 - Trial Mountain(IA2 Test) = 551
 - Trial Mountain Reverse = 531
 
-# Car Prices
+### Car Prices
+- 108(6C Hex) Bytes apart per car
 - 4 Bytes for price
 - +4 Bytes from price is bCarLocked, set to 0 to be able to buy it
 - First car price start at: **2086BE74**
 - 243 Cars with prices
 
+### Turbo Upgrades
+- 200 Bytes(C8 Hex) apart per car?
+- 40 Bytes(28 Hex) apart, turbo 1, 2,...
+- 7 Bytes from price is a byte, increase the value and the power upgrade is more powerful 1=normal,2=~double...
+- 8 Bytes from price is another byte, incrase the value and the power upgrade is more powerful but by only a slight amount.
+- 20 Bytes(14hex) from price is a byte, anything other than 4 and upgrade is not available to buy.
+- **Example**: Supra, Turbo 1 price is at **2072C62C**, Turbo 2 price is at **2072C654**, Turbo 3 price is at **2072C67C**, Turbo 4 price is at **2072C6A4**
+Audi TT Turbo#3 **2072C99C** is 200 bytes after, Audi S4 Turbo#3 **2072C8D4**
