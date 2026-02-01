@@ -69,6 +69,22 @@ These are the old format non-toggleable patches:
 - Some Examples: 0.10x, 0.25x, 0.5x, 1.25x, 1.50x, 1.75x, 2x, 5x, 10x, 25x, 50x, 100x, and even up to 1 million times power.
 - **Change in any menu, will not take effect if you change mid race.**
 
+### Turbo Power Multipliers
+- Setting a byte to anything other than 1 adds more power(like setting the turbo to max power, very few turbos have it set to 1).
+- Setting the byte to 2 gives a significant increase in power. 
+- Increasing the value by 1 after uses the power when the value is set to 1, then add the difference 1 and 2. 
+Example if BHP was 300 at 1, and then 450 at 2, the value of 3 will be 300 + (450 - 300) * 2.
+An example of the Toyota Supra Stage 1 Turbo:
+0 = 306 -> 342
+1 = 1007 -> 1044
+2 = 1731 -> 1768 // 724 stock inc
+3 = 2456 -> 2493 // 725 stock inc
+4 = 3180 -> 3217 // 724 stock inc
+
+### Max Power For All Turbos
+- Patch that changes a byte for all turbos to it's max value, this can have a massive effects on some cars, minor on some, and none on cars like the skyline GTR R34. The value can already be high already hence the low or no change.
+- **Change in any menu, will not take effect if you change mid race.**
+
 ### Global Gear Ratio Multipliers
 - Adjust all cars' gear ratios including AI. Lower the value the longer the gears will be, 0.9x and 0.8x already make the gears much longer than normal, the lower numbers are only really needed if you have 100x-1000x power multipliers to be able to use them.
 - Examples: Normal, 0.9x, 0.8x, 0.75x, 0.7x, 0.6x, 0.5x, 0.33x, 0.25x, 0.1x.
