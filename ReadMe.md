@@ -202,11 +202,15 @@ Address = 209C41D2 2 bytes
 - First car price start at: **2086BE74**
 - 243 Cars with prices
 
-### Turbo Upgrades
-- 200 Bytes(C8 Hex) apart per car?
+### Turbos
+- 200 Bytes(C8 Hex) apart? sprinter trueno(14th in list, Yaris 1.5RS 3rd in list, Euro Yaris is 35th in list, RX7 RZ is 33rd and 34th turbo)
 - 40 Bytes(28 Hex) apart, turbo 1, 2,...
 - 7 Bytes from price is a byte, increase the value and the power upgrade is more powerful 1=normal,2=~double...
 - 8 Bytes from price is another byte, incrase the value and the power upgrade is more powerful but by only a slight amount.
 - 20 Bytes(14hex) from price is a byte, anything other than 4 and upgrade is not available to buy.
+- First Address? **20729d5c**
+- Total Unique cars? 111
 - **Example**: Supra, Turbo 1 price is at **2072C62C**, Turbo 2 price is at **2072C654**, Turbo 3 price is at **2072C67C**, Turbo 4 price is at **2072C6A4**
 Audi TT Turbo#3 **2072C99C** is 200 bytes after, Audi S4 Turbo#3 **2072C8D4**
+- sprinter trueno -8 bytes example, set value higher for more power, less for less power 255Max
+- Tureno 1st Turbo 134, 2nd turbo 178, 3rd turbo byte is 223(123HP to 266HP(223 default), 267HP(224), 286HP(240), 303HP(255), 73HP(10)),
