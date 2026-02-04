@@ -312,35 +312,122 @@ patch=1,EE,D1FF2934,extended,02000001
 patch=1,EE,21FF1830,extended,3fa70a3c
 patch=1,EE,21FF1D4C,extended,3fa70a3c
 
-
 [License Tests\Normal Kerbs]
 author=Ooper
 description=Returns Kerbs back to normal.
 patch=1,EE,21FF1D4C,extended,3fa70a3c
 
-//if single race ticks hit 1
-//set our test byte to 1
-//if championship tick hits 1
-//set our test byte to 2
-//if byte is 1(single race) else skip 2 lines
-//set max rpm to 17000
-//set rpm redline to 17000
-//if byte is 2(Championship race) else skip 2 lines
-//set max rpm to 17000
-//set rpm redline to 17000
-[RPM Limits\Simulation Mode\Give Player 17000RPM Limit On All Cars]
-author=Ooper
-description=Change player's car max RPM Limit to 17000, single, championship, endurance races.
+//0350AF0 unused byte used for conditional execution
+//Single race ticks 1F978FC
+//Championship race ticks 1F9685C
+//License test ticks 1FD0D0C
+//Machine test ticks 1FB728C
+//Home -> test run ticks 1FC55BC
+//Arcade Race Ticks 1FAC35C
+//Time Trial Ticks 1FBB6B0
+[RPM Limits\17000 RPM]
+author=Ooper,DopplerEffect
+description=Player Car Max RPM 17000
+//race selection in the following order: sim single, sim champ, sim license, sim machine test, sim test run, arcade race, arcade time trial
 patch=1,EE,D1F978FC,extended,01000001
 patch=1,EE,00350AF0,extended,00000001
 patch=1,EE,D1F9685C,extended,01000001
 patch=1,EE,00350AF0,extended,00000002
+patch=1,EE,D1FD0D0C,extended,01000001
+patch=1,EE,00350AF0,extended,00000003
+patch=1,EE,D1FB728C,extended,01000001
+patch=1,EE,00350AF0,extended,00000004
+patch=1,EE,D1FC55BC,extended,01000001
+patch=1,EE,00350AF0,extended,00000005
+patch=1,EE,D1FAC35C,extended,01000001
+patch=1,EE,00350AF0,extended,00000006
+patch=1,EE,D1FBB6B0,extended,01000100
+patch=1,EE,00350AF0,extended,00000007
+//sets rev limit to 17000 and redline to 15000
+//sim single race
 patch=1,EE,D0350AF0,extended,02000001
 patch=1,EE,11FBDAB0,extended,00004268
-patch=1,EE,11FBDB12,extended,00004268
+patch=1,EE,11FBDB12,extended,00003A98
+//sim championship race
 patch=1,EE,D0350AF0,extended,02000002
 patch=1,EE,11FBCA6C,extended,00004268
+patch=1,EE,11FBCACE,extended,00003A98
+//sim license test
+patch=1,EE,D0350AF0,extended,02000003
+patch=1,EE,11FF1650,extended,00004268
+patch=1,EE,11FF16B2,extended,00003A98
+//sim machine test
+patch=1,EE,D0350AF0,extended,02000004
+patch=1,EE,11FF1900,extended,00004268
+patch=1,EE,11FF1962,extended,00003A98
+//sim test run
+patch=1,EE,D0350AF0,extended,02000005
+patch=1,EE,11FF1A64,extended,00004268
+patch=1,EE,11FF1AC6,extended,00003A98
+//arcade race
+patch=1,EE,D0350AF0,extended,02000006
+patch=1,EE,11FBB990,extended,00004268
+patch=1,EE,11FBB9F2,extended,00003A98
+//arcade time trial
+patch=1,EE,D0350AF0,extended,02000007
+patch=1,EE,11FBB95C,extended,00004268
+patch=1,EE,11FBB9BE,extended,00003A98
+//
+
+[RPM Limits\32000 RPM (READ DESCRIPTION, Altered New Method)]
+author=Ooper,DopplerEffect
+description=Player Car Max RPM 32000. Begin race within 3 seconds. If you do not, enter settings menu and reenter. In modes without settings menu available, exit to menu and reload.
+//
+//race selection in the following order: sim single, sim champ, sim license, sim machine test, sim test run, arcade race, arcade time trial.
+//Test byte changed at 258 ticks for stability
+patch=1,EE,D1F978FC,extended,01000102
+patch=1,EE,00350AF0,extended,00000001
+patch=1,EE,D1F9685C,extended,01000102
+patch=1,EE,00350AF0,extended,00000002
+patch=1,EE,D1FD0D0C,extended,01000102
+patch=1,EE,00350AF0,extended,00000003
+patch=1,EE,D1FB728C,extended,01000102
+patch=1,EE,00350AF0,extended,00000004
+patch=1,EE,D1FC55BC,extended,01000102
+patch=1,EE,00350AF0,extended,00000005
+patch=1,EE,D1FAC35C,extended,01000102
+patch=1,EE,00350AF0,extended,00000006
+patch=1,EE,D1FBB6B0,extended,01000102
+patch=1,EE,00350AF0,extended,00000007
+//
+//Rev Limit set to 32000 RPM, Redline set to 28000 RPM
+//Sim Single Race
+patch=1,EE,D0350AF0,extended,02000001
+patch=1,EE,11FBDAB0,extended,00007D00
+patch=1,EE,11FBDB12,extended,00006D60
+//Sim Championship Race
+//Extra condition to reset rev limit and redline to 170000 RPM before next race for stability
+patch=1,EE,D0350AF0,extended,03000002
+patch=1,EE,11FBCA6C,extended,00007D00
+patch=1,EE,11FBCACE,extended,00006D60
+patch=1,EE,D1F9685C,extended,02200050
+patch=1,EE,11FBCA6C,extended,00004268
 patch=1,EE,11FBCACE,extended,00004268
+//Sim License Test
+patch=1,EE,D0350AF0,extended,02000003
+patch=1,EE,11FF1650,extended,00007D00
+patch=1,EE,11FF16B2,extended,00006D60
+//Sim Machine Test
+patch=1,EE,D0350AF0,extended,02000004
+patch=1,EE,11FF1900,extended,00007D00
+patch=1,EE,11FF1962,extended,00006D60
+//Sim Test Run
+patch=1,EE,D0350AF0,extended,02000005
+patch=1,EE,11FF1A64,extended,00007D00
+patch=1,EE,11FF1AC6,extended,00006D60
+//Arcade Race
+patch=1,EE,D0350AF0,extended,02000006
+patch=1,EE,11FBB990,extended,00007D00
+patch=1,EE,11FBB9F2,extended,00006D60
+//Arcade Time Trial
+patch=1,EE,D0350AF0,extended,02000007
+patch=1,EE,11FBB95C,extended,00007D00
+patch=1,EE,11FBB9BE,extended,00006D60
 
 [Gear Ratio\Normal]
 author=Ooper
