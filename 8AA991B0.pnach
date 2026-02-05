@@ -355,11 +355,12 @@ patch=1,EE,11FBB9F2,extended,00000000
 patch=1,EE,11FBB95C,extended,00000000
 patch=1,EE,11FBB9BE,extended,00000000
 patch=1,EE,00350AF0,extended,0000000F //set test value to F
+
 //main menu value is 0 in races, so we need a second condition
 patch=1,EE,E0020000,extended,01FFF1A4 //If main menu value is 0... 
 patch=1,EE,E001000F,extended,00350AF0 //and test value is F...
 patch=1,EE,00350AF0,extended,0000000E //set test value to E
-//if ticks value hits 1 and test value is E, change byte
+
 //This can only happen after we have reset the values safely when our byte was F
 patch=1,EE,E0020001,extended,01F978FC //if ticks value hits 1...
 patch=1,EE,E001000E,extended,00350AF0 //and test value is E
@@ -436,6 +437,7 @@ patch=1,EE,E0020000,extended,01FFF1A4 //If main menu value is 0...
 patch=1,EE,E001000F,extended,00350AF0 //and test value is F...
 patch=1,EE,00350AF0,extended,0000000E //set test value to E
 //main menu value is 0 in races, so we needed a second condition
+
 //if ticks value hits 0x0102 and test value is E, change byte
 //This can only happen after we have reset the values safely when our byte was F
 patch=1,EE,E0020102,extended,01F978FC //sim single race
@@ -489,6 +491,7 @@ patch=1,EE,11FBCACE,extended,00001000
 patch=1,EE,E0020102,extended,01F9685C //If physics ticks hits 0x0102...
 patch=1,EE,E001000A,extended,00350AF0 //and the value is A...
 patch=1,EE,00350AF0,extended,00000002 //set our value to 2
+
 [Gear Ratio\Normal]
 author=Ooper
 description=Set global gear ratio scale to normal value
