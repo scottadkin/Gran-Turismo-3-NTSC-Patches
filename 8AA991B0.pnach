@@ -411,6 +411,7 @@ author=Ooper,DopplerEffect
 description=Player Car Max RPM 32000. 3 seconds to hit "start race"
 //race selection in the following order: sim single, sim champ, sim license, sim machine test, sim test run, arcade race, arcade time trial
 patch=1,EE,D1FFF1A4,extended,16000001 //If main menu value is 1...
+patch=1,EE,01FBC240,extended,00000000 //Set championship stability value to 0
 patch=1,EE,21F978FC,extended,00000000 //Set physics ticks to 0
 patch=1,EE,21F9685C,extended,00000000
 patch=1,EE,21FD0D0C,extended,00000000
