@@ -318,8 +318,6 @@ author=Ooper
 description=Returns Kerbs back to normal.
 patch=1,EE,21FF1D4C,extended,3fa70a3c
 
-gametitle=Gran Turismo 3 [PBPX_955.03;1]NTSC [8AA991B0]
-
 //0350AF0 unused byte used for conditional execution
 //Main Menu Byte 1FFF1A4. Sets all values to safe values when it is 1. It is 1 before selecting an event and in main menu, so it will always reset values going from sim to arcade.
 //Single race ticks 1F978FC
