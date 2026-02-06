@@ -65,7 +65,7 @@ description=Walls have a much stronger pushback when hit.
 patch=1,EE,203506C0,extended,c00ccccd
 patch=1,EE,D1FCBB94,extended,01000032
 patch=1,EE,01FF2934,extended,01000000
-patch=1,EE,D1FF2934,extended,02000001
+patch=1,EE,D1FF2934,extended,01000001
 patch=1,EE,203506C0,extended,bf866666
 
 [Physics\Normal Walls]
