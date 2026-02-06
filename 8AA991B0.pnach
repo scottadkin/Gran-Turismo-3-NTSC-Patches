@@ -318,29 +318,195 @@ author=Ooper
 description=Returns Kerbs back to normal.
 patch=1,EE,21FF1D4C,extended,3fa70a3c
 
-//if single race ticks hit 1
-//set our test byte to 1
-//if championship tick hits 1
-//set our test byte to 2
-//if byte is 1(single race) else skip 2 lines
-//set max rpm to 17000
-//set rpm redline to 17000
-//if byte is 2(Championship race) else skip 2 lines
-//set max rpm to 17000
-//set rpm redline to 17000
-[RPM Limits\Simulation Mode\Give Player 17000RPM Limit On All Cars]
-author=Ooper
-description=Change player's car max RPM Limit to 17000, single, championship, endurance races.
-patch=1,EE,D1F978FC,extended,01000001
-patch=1,EE,00350AF0,extended,00000001
-patch=1,EE,D1F9685C,extended,01000001
-patch=1,EE,00350AF0,extended,00000002
-patch=1,EE,D0350AF0,extended,02000001
+//0350AF0 unused byte used for conditional execution
+//Main Menu Byte 1FFF1A4. Sets all values to safe values when it is 1. It is 1 before selecting an event and in main menu, so it will always reset values going from sim to arcade.
+//Single race ticks 1F978FC
+//Championship race ticks 1F9685C
+//License test ticks 1FD0D0C
+//Machine test ticks 1FB728C
+//Home -> test run ticks 1FC55BC
+//Arcade Race Ticks 1FAC35C
+//Time Trial Ticks 1FBB6B0
+
+[RPM Limits\17000 RPM]
+author=Ooper,DopplerEffect
+description=Player Car Max RPM 17000
+//race selection in the following order: sim single, sim champ, sim license, sim machine test, sim test run, arcade race, arcade time trial
+patch=1,EE,D1FFF1A4,extended,19000001 //If main menu value is 1...
+patch=1,EE,21F978FC,extended,00000000 //Set physics ticks to 0
+patch=1,EE,21F9685C,extended,00000000
+patch=1,EE,21FD0D0C,extended,00000000
+patch=1,EE,21FB728C,extended,00000000
+patch=1,EE,21FC55BC,extended,00000000
+patch=1,EE,21FAC35C,extended,00000000
+patch=1,EE,21FBB6B0,extended,00000000
+patch=1,EE,21FC9A48,extended,00000000
+patch=1,EE,11FBDAB0,extended,00000000 //Set physics rpm/redline to 0
+patch=1,EE,11FBDB12,extended,00000000
+patch=1,EE,11FBCA6C,extended,00000000
+patch=1,EE,11FBCACE,extended,00000000
+patch=1,EE,11FF1650,extended,00000000
+patch=1,EE,11FF16B2,extended,00000000
+patch=1,EE,11FF1900,extended,00000000
+patch=1,EE,11FF1962,extended,00000000
+patch=1,EE,11FF1A64,extended,00000000
+patch=1,EE,11FF1AC6,extended,00000000
+patch=1,EE,11FBB990,extended,00000000
+patch=1,EE,11FBB9F2,extended,00000000
+patch=1,EE,11FBB95C,extended,00000000
+patch=1,EE,11FBB9BE,extended,00000000
+patch=1,EE,11FBB964,extended,00000000
+patch=1,EE,11FBB9C6,extended,00000000
+patch=1,EE,00350AF0,extended,0000000F //set test value to F
+
+//main menu value is 0 in races, so we need a second condition
+patch=1,EE,E0020000,extended,01FFF1A4 //If main menu value is 0... 
+patch=1,EE,E001000F,extended,00350AF0 //and test value is F...
+patch=1,EE,00350AF0,extended,0000000E //set test value to E
+
+//This can only happen after we have reset the values safely when our byte was F
+patch=1,EE,E0020001,extended,01F978FC //if ticks value hits 1...
+patch=1,EE,E001000E,extended,00350AF0 //and test value is E
+patch=1,EE,00350AF0,extended,00000001 //set byte for sim single race
+patch=1,EE,E0020001,extended,01F9685C
+patch=1,EE,E001000E,extended,00350AF0
+patch=1,EE,00350AF0,extended,00000002 //set byte for championship race
+patch=1,EE,E0020001,extended,01FD0D0C
+patch=1,EE,E001000E,extended,00350AF0
+patch=1,EE,00350AF0,extended,00000003 //set byte for license test
+patch=1,EE,E0020001,extended,01FB728C
+patch=1,EE,E001000E,extended,00350AF0
+patch=1,EE,00350AF0,extended,00000004 //set byte for machine test
+patch=1,EE,E0020001,extended,01FC55BC
+patch=1,EE,E001000E,extended,00350AF0
+patch=1,EE,00350AF0,extended,00000005 //set byte for test run
+patch=1,EE,D1FAC35C,extended,01000001 //if physics ticks hit 1
+patch=1,EE,00350AF0,extended,00000006 //set byte for arcade race
+patch=1,EE,D1FBB6B0,extended,01000100 //if physics ticks hit 0x0100
+patch=1,EE,00350AF0,extended,00000007 //set byte for time trial
+patch=1,EE,D1FC9A48,extended,01308000 //if physics ticks > 0x8000 (for some reason free run ticks up way faster)
+patch=1,EE,00350AF0,extended,00000008 //set byte for free run
+
+//sets rev limit to 17000 and redline to 15000
+patch=1,EE,D0350AF0,extended,02000001 //sim single race
 patch=1,EE,11FBDAB0,extended,00004268
-patch=1,EE,11FBDB12,extended,00004268
-patch=1,EE,D0350AF0,extended,02000002
+patch=1,EE,11FBDB12,extended,00003A98
+patch=1,EE,D0350AF0,extended,02000002 //sim championship race
 patch=1,EE,11FBCA6C,extended,00004268
-patch=1,EE,11FBCACE,extended,00004268
+patch=1,EE,11FBCACE,extended,00003A98
+patch=1,EE,D0350AF0,extended,02000003 //sim license test
+patch=1,EE,11FF1650,extended,00004268
+patch=1,EE,11FF16B2,extended,00003A98
+patch=1,EE,D0350AF0,extended,02000004 //sim machine test
+patch=1,EE,11FF1900,extended,00004268
+patch=1,EE,11FF1962,extended,00003A98
+patch=1,EE,D0350AF0,extended,02000005 //sim test run
+patch=1,EE,11FF1A64,extended,00004268
+patch=1,EE,11FF1AC6,extended,00003A98
+patch=1,EE,D0350AF0,extended,02000006 //arcade race
+patch=1,EE,11FBB990,extended,00004268
+patch=1,EE,11FBB9F2,extended,00003A98
+patch=1,EE,D0350AF0,extended,02000007 //arcade time trial
+patch=1,EE,11FBB95C,extended,00004268
+patch=1,EE,11FBB9BE,extended,00003A98
+patch=1,EE,D0350AF0,extended,02000008 //arcade free run
+patch=1,EE,11FBB964,extended,00004268
+patch=1,EE,11FBB9C6,extended,00003A98
+
+[RPM Limits\32000 RPM (Stable In Simulation Mode)]
+author=Ooper,DopplerEffect
+description=Player Car Max RPM 32000. 3 seconds to hit "start race"
+//race selection in the following order: sim single, sim champ, sim license, sim machine test, sim test run, arcade race, arcade time trial
+patch=1,EE,D1FFF1A4,extended,19000001 //If main menu value is 1...
+patch=1,EE,21F978FC,extended,00000000 //Set physics ticks to 0
+patch=1,EE,21F9685C,extended,00000000
+patch=1,EE,21FD0D0C,extended,00000000
+patch=1,EE,21FB728C,extended,00000000
+patch=1,EE,21FC55BC,extended,00000000
+patch=1,EE,21FAC35C,extended,00000000
+patch=1,EE,21FBB6B0,extended,00000000
+patch=1,EE,21FC9A48,extended,00000000
+patch=1,EE,11FBDAB0,extended,00000000 //Set physics rpm/redline to 0
+patch=1,EE,11FBDB12,extended,00000000
+patch=1,EE,11FBCA6C,extended,00000000
+patch=1,EE,11FBCACE,extended,00000000
+patch=1,EE,11FF1650,extended,00000000
+patch=1,EE,11FF16B2,extended,00000000
+patch=1,EE,11FF1900,extended,00000000
+patch=1,EE,11FF1962,extended,00000000
+patch=1,EE,11FF1A64,extended,00000000
+patch=1,EE,11FF1AC6,extended,00000000
+patch=1,EE,11FBB990,extended,00000000
+patch=1,EE,11FBB9F2,extended,00000000
+patch=1,EE,11FBB95C,extended,00000000
+patch=1,EE,11FBB9BE,extended,00000000
+patch=1,EE,11FBB964,extended,00000000
+patch=1,EE,11FBB9C6,extended,00000000
+patch=1,EE,00350AF0,extended,0000000F //set test value to F
+
+patch=1,EE,E0020000,extended,01FFF1A4 //If main menu value is 0... 
+patch=1,EE,E001000F,extended,00350AF0 //and test value is F...
+patch=1,EE,00350AF0,extended,0000000E //set test value to E
+//main menu value is 0 in races, so we needed a second condition
+
+//if ticks value hits 0x0102 and test value is E, change byte
+//This can only happen after we have reset the values safely when our byte was F
+patch=1,EE,E0020102,extended,01F978FC //sim single race
+patch=1,EE,E001000E,extended,00350AF0
+patch=1,EE,00350AF0,extended,00000001
+patch=1,EE,E0020102,extended,01F9685C //sim championship race
+patch=1,EE,E001000E,extended,00350AF0
+patch=1,EE,00350AF0,extended,00000002
+patch=1,EE,E0020102,extended,01FD0D0C //sim licese test
+patch=1,EE,E001000E,extended,00350AF0
+patch=1,EE,00350AF0,extended,00000003
+patch=1,EE,E0020102,extended,01FB728C //sim machine test
+patch=1,EE,E001000E,extended,00350AF0
+patch=1,EE,00350AF0,extended,00000004
+patch=1,EE,E0020102,extended,01FC55BC //sim test run
+patch=1,EE,E001000E,extended,00350AF0
+patch=1,EE,00350AF0,extended,00000005
+patch=1,EE,D1FAC35C,extended,01000102 //arcade race
+patch=1,EE,00350AF0,extended,00000006
+patch=1,EE,D1FBB6B0,extended,01000102 //arcade time trial
+patch=1,EE,00350AF0,extended,00000007
+patch=1,EE,D1FC9A48,extended,01008000 //arcade free run
+patch=1,EE,00350AF0,extended,00000008
+
+//sets rev limit to 32000 and redline to 28000
+patch=1,EE,D0350AF0,extended,02000001 //sim single race
+patch=1,EE,11FBDAB0,extended,00007D00
+patch=1,EE,11FBDB12,extended,00006D60
+patch=1,EE,D0350AF0,extended,02000002 //sim championship race
+patch=1,EE,11FBCA6C,extended,00007D00
+patch=1,EE,11FBCACE,extended,00006D60
+patch=1,EE,D0350AF0,extended,02000003 //sim license test
+patch=1,EE,11FF1650,extended,00007D00
+patch=1,EE,11FF16B2,extended,00006D60
+patch=1,EE,D0350AF0,extended,02000004 //sim machine test
+patch=1,EE,11FF1900,extended,00007D00
+patch=1,EE,11FF1962,extended,00006D60
+patch=1,EE,D0350AF0,extended,02000005 //sim test run
+patch=1,EE,11FF1A64,extended,00007D00
+patch=1,EE,11FF1AC6,extended,00006D60
+patch=1,EE,D0350AF0,extended,02000006 //arcade race
+patch=1,EE,11FBB990,extended,00007D00
+patch=1,EE,11FBB9F2,extended,00006D60
+patch=1,EE,D0350AF0,extended,02000007 //arcade time trial
+patch=1,EE,11FBB95C,extended,00007D00
+patch=1,EE,11FBB9BE,extended,00006D60
+patch=1,EE,D0350AF0,extended,02000008 //arcade free run
+patch=1,EE,11FBB964,extended,00007D00
+patch=1,EE,11FBB9C6,extended,00006D60
+
+//end of championship race stability
+patch=1,EE,D1FBC240,extended,03000001 //if the replay has started
+patch=1,EE,00350AF0,extended,0000000A //set our value to A
+patch=1,EE,11FBCA6C,extended,00001000 //set rpm and redline to 0x1000
+patch=1,EE,11FBCACE,extended,00001000
+patch=1,EE,E0020102,extended,01F9685C //If physics ticks hits 0x0102...
+patch=1,EE,E001000A,extended,00350AF0 //and the value is A...
+patch=1,EE,00350AF0,extended,00000002 //set our value to 2
 
 [Gear Ratio\Normal]
 author=Ooper
