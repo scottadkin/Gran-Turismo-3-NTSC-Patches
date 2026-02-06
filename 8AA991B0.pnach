@@ -1,57 +1,20 @@
 gametitle=Gran Turismo 3 [PBPX_955.03;1]NTSC [8AA991B0]
 
 
-//0350AF0 test unused byte
-//single race ticks 1F978FC //set our byte to 1
-//championship race ticks 1F9685C //set our byte to 2
-//license test ticks 1FD0D0C //set our byte to 3
-//machine test ticks 1FB728C	//set our byte to 4
-//1FC55BC home settings test ticks //set our byte 5
-//if arcade race ticks hits 1 set our byte to 6
-[Test\isddsgsdgsdgsd]
-author=Ooper
-description=Gives kerbs ridiculous properties, single, championship, endurance races.
-patch=1,EE,D1F978FC,extended,01000001
-patch=1,EE,00350AF0,extended,00000001
-patch=1,EE,D1F9685C,extended,01000001
-patch=1,EE,00350AF0,extended,00000002
-patch=1,EE,D1FD0D0C,extended,01000001
-patch=1,EE,00350AF0,extended,00000003
-patch=1,EE,D1FB728C,extended,01000001
-patch=1,EE,00350AF0,extended,00000004
-patch=1,EE,D1FC55BC,extended,01000001
-patch=1,EE,00350AF0,extended,00000005
-patch=1,EE,D1FAC35C,extended,01000001
-patch=1,EE,00350AF0,extended,00000006
-
-
 //0350AF0 test unused byte//single race ticks 1F978FC//championship race ticks 1F9685C
 //if single race ticks hit 1
 //set our test byte to 1
 //if championship tick hits 1
 //set our test byte to 2
-//if license test tick hits 1
-//set our test byte to 3
-//if machine tests ticks hits 1
-//set our byte to 4
-//if home setting tests ticks hits 1
-// set our byte to 5
 //if our byte is 1 exec next 12 lines(set front then rear kerb values for each player and AI single race addresses) else skip
 //if our byte is 2 exec next 12 lines(set front then rear kerb values for each player and AI championship race addresses) else end
-//if our byte is 3 exec next 14 lines(set front then rear kerb values for license tests, use special values for IB-3, S-2) else end
-[Physics\All Modes\Crazy Kerbs]
+[Physics\Simulation Mode\Crazy Kerbs]
 author=Ooper
 description=Gives kerbs ridiculous properties, single, championship, endurance races.
 patch=1,EE,D1F978FC,extended,01000001
 patch=1,EE,00350AF0,extended,00000001
 patch=1,EE,D1F9685C,extended,01000001
 patch=1,EE,00350AF0,extended,00000002
-patch=1,EE,D1FD0D0C,extended,01000001
-patch=1,EE,00350AF0,extended,00000003
-patch=1,EE,D1FB728C,extended,01000001
-patch=1,EE,00350AF0,extended,00000004
-patch=1,EE,D1FC55BC,extended,01000001
-patch=1,EE,00350AF0,extended,00000005
 patch=1,EE,D0350AF0,extended,0C000001
 patch=1,EE,21FBDC90,extended,c57a0000
 patch=1,EE,21FBE1AC,extended,c57a0000
@@ -78,22 +41,6 @@ patch=1,EE,21FC27BC,extended,c57a0000
 patch=1,EE,21FC2CD8,extended,c57a0000
 patch=1,EE,21FC3E98,extended,c57a0000
 patch=1,EE,21FC43B4,extended,c57a0000
-patch=1,EE,D0350AF0,extended,0E000003
-patch=1,EE,D1FF2934,extended,0A000000
-patch=1,EE,21FF1830,extended,c57a0000
-patch=1,EE,21FF1D4C,extended,c57a0000
-patch=1,EE,D1FFFC00,extended,03000002
-patch=1,EE,D1FFFBF4,extended,02000002
-patch=1,EE,21FF1830,extended,41a00000
-patch=1,EE,21FF1D4C,extended,41a00000
-patch=1,EE,D1FFFC00,extended,03000004
-patch=1,EE,D1FFFBF4,extended,02000001
-patch=1,EE,21FF1D4C,extended,41a00000
-patch=1,EE,21FF1830,extended,41a00000
-patch=1,EE,D1FF2934,extended,02000001
-patch=1,EE,21FF1830,extended,3fa70a3c
-patch=1,EE,21FF1D4C,extended,3fa70a3c
-
 
 //Set grass value to crazy value if AI doesn't have control in a license test, fallback if race timer hits 50 set the AI License Auto Drive value to 0 to prevent cheat not working in races if you leave a test while the AI still has control
 [Physics\Crazy Grass, Dirt, Sand]
@@ -118,14 +65,13 @@ description=Walls have a much stronger pushback when hit.
 patch=1,EE,203506C0,extended,c00ccccd
 patch=1,EE,D1FCBB94,extended,01000032
 patch=1,EE,01FF2934,extended,01000000
-patch=1,EE,D1FF2934,extended,01000001
+patch=1,EE,D1FF2934,extended,02000001
 patch=1,EE,203506C0,extended,bf866666
 
 [Physics\Normal Walls]
 author=Ooper
 description=Normal walls physics.
 patch=1,EE,203506C0,extended,bf866666
-
 
 [Physics\Air Resistance\0 (Zero Downforce & Drag)]
 author=Ooper
@@ -166,7 +112,6 @@ patch=1,EE,203501E0,extended,3da3d70a
 author=Ooper
 description=Set global air resistance value to 10x it's normal value..
 patch=1,EE,203501E0,extended,3dcccccc
-
 
 [Physics\Grip\0.50x Grip]
 author=Ooper
@@ -259,57 +204,6 @@ description=Turn off gravity.
 patch=1,EE,20350544,extended,00000000
 
 
-
-
-//default 3fa70a3c, 41a00000 nerfed for seattle, crazy c57a0000
-//IF AI doesn't have control exec next 10 lines
-//set front to crazy
-//set rear to crazy
-//IF license group is 2(IB) Exec next 3 lines
-//If licensse test is 2(3 IB-3) Exec next 2 lines
-//Then set to alt crazy front kerbs
-//and set to alt crazy rear kerbs
-//IF license group is 4(S) Exec next 3 lines
-//If licensse test is 1(2 S-2) Exec next 2 lines
-//Then set to alt crazy front kerbs
-//and set to alt crazy rear kerbs
-//IF AI has control exec next 2 lines
-//Then set to normal front kerbs
-//and set to normal rear kerbs
-[License Tests\Crazy Kerbs 3]
-author=Ooper
-description=Gives kerbs crazy physics.
-patch=1,EE,D1FF2934,extended,0A000000
-patch=1,EE,21FF1830,extended,c57a0000
-patch=1,EE,21FF1D4C,extended,c57a0000
-patch=1,EE,D1FFFC00,extended,03000002
-patch=1,EE,D1FFFBF4,extended,02000002
-patch=1,EE,21FF1830,extended,41a00000
-patch=1,EE,21FF1D4C,extended,41a00000
-patch=1,EE,D1FFFC00,extended,03000004
-patch=1,EE,D1FFFBF4,extended,02000001
-patch=1,EE,21FF1D4C,extended,41a00000
-patch=1,EE,21FF1830,extended,41a00000
-patch=1,EE,D1FF2934,extended,02000001
-patch=1,EE,21FF1830,extended,3fa70a3c
-patch=1,EE,21FF1D4C,extended,3fa70a3c
-
-
-
-
-
-//1FFFC00 current license group 0-5
-//1FFFBF4 current license test 0-7
-//IB3 2-2 
-//S2 GT40 1-4
-
-[License Tests\Normal Kerbs]
-author=Ooper
-description=Returns Kerbs back to normal.
-patch=1,EE,21FF1D4C,extended,3fa70a3c
-patch=1,EE,21FF1830,extended,3fa70a3c
-
-
 //if single race ticks hit 1
 //set our test byte to 1
 //if championship tick hits 1
@@ -384,6 +278,55 @@ patch=1,EE,21FBF4B4,extended,3f800000
 patch=1,EE,21FC0B90,extended,3f800000
 patch=1,EE,21FC226C,extended,3f800000
 patch=1,EE,21FC3948,extended,3f800000
+
+//default 3fa70a3c, 41a00000 nerfed for seattle, crazy c57a0000
+//IF AI doesn't have control exec next 10 lines
+//set front to crazy
+//set rear to crazy
+//IF license group is 2(IB) Exec next 3 lines
+//If licensse test is 2(3 IB-3) Exec next 2 lines
+//Then set to alt crazy front kerbs
+//and set to alt crazy rear kerbs
+//IF license group is 4(S) Exec next 3 lines
+//If licensse test is 1(2 S-2) Exec next 2 lines
+//Then set to alt crazy front kerbs
+//and set to alt crazy rear kerbs
+//IF AI has control exec next 2 lines
+//Then set to normal front kerbs
+//and set to normal rear kerbs
+[License Tests\Crazy Kerbs 3]
+author=Ooper
+description=Gives kerbs crazy physics.
+patch=1,EE,D1FF2934,extended,0A000000
+patch=1,EE,21FF1830,extended,c57a0000
+patch=1,EE,21FF1D4C,extended,c57a0000
+patch=1,EE,D1FFFC00,extended,03000002
+patch=1,EE,D1FFFBF4,extended,02000002
+patch=1,EE,21FF1830,extended,41a00000
+patch=1,EE,21FF1D4C,extended,41a00000
+patch=1,EE,D1FFFC00,extended,03000004
+patch=1,EE,D1FFFBF4,extended,02000001
+patch=1,EE,21FF1D4C,extended,41a00000
+patch=1,EE,21FF1830,extended,41a00000
+patch=1,EE,D1FF2934,extended,02000001
+patch=1,EE,21FF1830,extended,3fa70a3c
+patch=1,EE,21FF1D4C,extended,3fa70a3c
+
+
+[License Tests\Normal Kerbs]
+author=Ooper
+description=Returns Kerbs back to normal.
+patch=1,EE,21FF1D4C,extended,3fa70a3c
+
+//0350AF0 unused byte used for conditional execution
+//Main Menu Byte 1FFF1A4. Sets all values to safe values when it is 1. It is 1 before selecting an event and in main menu, so it will always reset values going from sim to arcade.
+//Single race ticks 1F978FC
+//Championship race ticks 1F9685C
+//License test ticks 1FD0D0C
+//Machine test ticks 1FB728C
+//Home -> test run ticks 1FC55BC
+//Arcade Race Ticks 1FAC35C
+//Time Trial Ticks 1FBB6B0
 
 [RPM Limits\Global\17000 RPM]
 author=Ooper,DopplerEffect
@@ -552,7 +495,6 @@ patch=1,EE,11FBCACE,extended,00001000
 patch=1,EE,D1F9685C,extended,02000102 //If physics ticks hits 0x0102...
 patch=1,EE,D1350AF0,extended,0100000A //and the value is A...
 patch=1,EE,00350AF0,extended,00000002 //set our value to 2
-
 
 [Gear Ratio\Normal]
 author=Ooper
@@ -750,160 +692,6 @@ patch=1,EE,20350324,extended,42c80001
 author=Ooper
 description=All cars and upgrades in the game will have 1 Million times their normal power(Toggle when in a menu not during a race).
 patch=1,EE,20350324,extended,447a0001
-
-
-[Car Dealer\Unlock All Cars]
-author=Ooper
-description=Unlock all locked cars allowing you to buy them.
-patch=1,EE,0086c088,extended,00
-patch=1,EE,0086c190,extended,00
-patch=1,EE,0086c6b8,extended,00
-patch=1,EE,0086c8c8,extended,00
-patch=1,EE,0086cad8,extended,00
-patch=1,EE,0086dc60,extended,00
-patch=1,EE,0086dd68,extended,00
-patch=1,EE,0086e080,extended,00
-patch=1,EE,0086e6b0,extended,00
-patch=1,EE,0086ede8,extended,00
-patch=1,EE,00870288,extended,00
-patch=1,EE,008705a0,extended,00
-patch=1,EE,00870ac8,extended,00
-patch=1,EE,00871200,extended,00
-patch=1,EE,00871620,extended,00
-patch=1,EE,00871830,extended,00
-patch=1,EE,00871a40,extended,00
-patch=1,EE,00871d58,extended,00
-patch=1,EE,00872070,extended,00
-patch=1,EE,00872178,extended,00
-patch=1,EE,00872598,extended,00
-patch=1,EE,008726a0,extended,00
-patch=1,EE,008727a8,extended,00
-patch=1,EE,008728b0,extended,00
-patch=1,EE,008729b8,extended,00
-patch=1,EE,00872fe8,extended,00
-patch=1,EE,00873618,extended,00
-patch=1,EE,00873720,extended,00
-patch=1,EE,00873a38,extended,00
-patch=1,EE,00874170,extended,00
-patch=1,EE,008749b0,extended,00
-patch=1,EE,00874cc8,extended,00
-patch=1,EE,008752f8,extended,00
-patch=1,EE,00875718,extended,00
-patch=1,EE,00875820,extended,00
-patch=1,EE,00875e50,extended,00
-patch=1,EE,00876168,extended,00
-patch=1,EE,00876270,extended,00
-patch=1,EE,00876ab0,extended,00
-patch=1,EE,00877a28,extended,00
-patch=1,EE,00878268,extended,00
-patch=1,EE,00878580,extended,00
-patch=1,EE,008789a0,extended,00
-patch=1,EE,00878dc0,extended,00
-patch=1,EE,008790d8,extended,00
-patch=1,EE,00879d38,extended,00
-patch=1,EE,00879e40,extended,00
-patch=1,EE,00879f48,extended,00
-patch=1,EE,0087a050,extended,00
-patch=1,EE,0087a158,extended,00
-patch=1,EE,0087a260,extended,00
-patch=1,EE,0087aba8,extended,00
-patch=1,EE,0087b1d8,extended,00
-
-[Car Dealer\Replace Audi S4\Sample 001(RX7 Race Car 17000RPM)]
-author=Ooper
-description=Buying the Audi S4 gives you Sample 001.
-patch=1,EE,2086BE70,extended,01F3
-
-[Car Dealer\Replace Audi S4\Sample 002(Yellow TVR)]
-author=Ooper
-description=Buying the Audi S4 gives you Sample 002.
-patch=1,EE,2086BE70,extended,01F4
-
-[Car Dealer\Replace Audi S4\Sample 003(Acura RSX)]
-author=Ooper
-description=Buying the Audi S4 gives you Sample 003.
-patch=1,EE,2086BE70,extended,01F5
-
-[Car Dealer\Replace Audi S4\Sample 004(Grey/Green TVR)]
-author=Ooper
-description=Buying the Audi S4 gives you Sample 004.
-patch=1,EE,2086BE70,extended,01F6
-
-
-[Car Dealer\Replace Audi S4\Sample 005(White Acura RSX)]
-author=Ooper
-description=Buying the Audi S4 gives you Sample 005.
-patch=1,EE,2086BE70,extended,01F7
-
-[Car Dealer\Replace Audi S4\Sample 006(Weird sphears)]
-author=Ooper
-description=Buying the Audi S4 gives you Sample 006.
-patch=1,EE,2086BE70,extended,01F8
-
-[Car Dealer\Replace Audi S4\Sample 007(White Acura RSX)]
-author=Ooper
-description=Buying the Audi S4 gives you Sample 007.
-patch=1,EE,2086BE70,extended,01F9
-
-[Car Dealer\Replace Audi S4\Sample 008(Blue Acura RSX)]
-author=Ooper
-description=Buying the Audi S4 gives you Sample 008.
-patch=1,EE,2086BE70,extended,01FA
-
-[Car Dealer\Replace Audi S4\Sample 009(White TVR)]
-author=Ooper
-description=Buying the Audi S4 gives you Sample 009.
-patch=1,EE,2086BE70,extended,01FB
-
-[Car Dealer\Replace Audi S4\Sample 010(F1)]
-author=Ooper
-description=Buying the Audi S4 gives you Sample 010.
-patch=1,EE,2086BE70,extended,01FC
-
-[Car Dealer\Replace Audi S4\Mazda MX-5(Offset Japanese Plate)]
-author=Ooper
-description=Buying the Audi S4 gives you Mazda MX-5(Offset Japanese Plate).
-patch=1,EE,2086BE70,extended,0154
-
-[Car Dealer\Replace Audi S4\Mazda MX-5(Roll Cage + Japanese Plate)]
-author=Ooper
-description=Buying the Audi S4 gives you Mazda MX-5(Roll Cage + Japanese Plate).
-patch=1,EE,2086BE70,extended,015A
-
-[Car Dealer\Replace Audi S4\Mazda MX-5(Gran Turismo Plate)]
-author=Ooper
-description=Buying the Audi S4 gives you Mazda MX-5(Gran Turismo Plate).
-patch=1,EE,2086BE70,extended,0158
-
-[Car Dealer\Replace Audi S4\Nissan GT-R M-Spec]
-author=Ooper
-description=Buying the Audi S4 gives you Nissan GT-R M-Spec.
-patch=1,EE,2086BE70,extended,018F
-
-[Car Dealer\Replace Audi S4\Lamborghini Diablo]
-author=Ooper
-description=Buying the Audi S4 gives you Lamborghini Diablo.
-patch=1,EE,2086BE70,extended,0143
-
-[Car Dealer\Replace Audi S4\Lancia Stratos]
-author=Ooper
-description=Buying the Audi S4 gives you Lancia Stratos.
-patch=1,EE,2086BE70,extended,0144
-
-[Car Dealer\Replace Audi S4\Lancia Stratos Rally Car]
-author=Ooper
-description=Buying the Audi S4 gives you Lancia Stratos Rally Car.
-patch=1,EE,2086BE70,extended,0145
-
-[Car Dealer\Replace Audi S4\Porsche 911(996) GT3]
-author=Ooper
-description=Buying the Audi S4 gives you Porsche 911(996) GT3.
-patch=1,EE,2086BE70,extended,01EC
-
-[Car Dealer\Replace Audi S4\Lancer 6 Rally Car Special]
-author=Ooper
-description=Buying the Audi S4 gives you Lancer 6 Rally Car Special.
-patch=1,EE,2086BE70,extended,01FD
 
 [Turbos\Multiplier\All Set To 1]
 author=Ooper
@@ -5376,7 +5164,7 @@ patch=1,EE,0072f34d,extended,08
 patch=1,EE,0072f375,extended,08 
 patch=1,EE,0072f39d,extended,08 
 patch=1,EE,0072f3c5,extended,08 
-patch=1,EE,0072f3ed,extended,08
+patch=1,EE,0072f3ed,extended,08 
 
 [Turbos\Multiplier\All Set To 100]
 author=Ooper
@@ -7054,3 +6842,156 @@ patch=1,EE,0072f374,extended,FF
 patch=1,EE,0072f39c,extended,FF 
 patch=1,EE,0072f3c4,extended,FF 
 patch=1,EE,0072f3ec,extended,FF 
+
+[Car Dealer\Unlock All Cars]
+author=Ooper
+description=Unlock all locked cars allowing you to buy them.
+patch=1,EE,0086c088,extended,00
+patch=1,EE,0086c190,extended,00
+patch=1,EE,0086c6b8,extended,00
+patch=1,EE,0086c8c8,extended,00
+patch=1,EE,0086cad8,extended,00
+patch=1,EE,0086dc60,extended,00
+patch=1,EE,0086dd68,extended,00
+patch=1,EE,0086e080,extended,00
+patch=1,EE,0086e6b0,extended,00
+patch=1,EE,0086ede8,extended,00
+patch=1,EE,00870288,extended,00
+patch=1,EE,008705a0,extended,00
+patch=1,EE,00870ac8,extended,00
+patch=1,EE,00871200,extended,00
+patch=1,EE,00871620,extended,00
+patch=1,EE,00871830,extended,00
+patch=1,EE,00871a40,extended,00
+patch=1,EE,00871d58,extended,00
+patch=1,EE,00872070,extended,00
+patch=1,EE,00872178,extended,00
+patch=1,EE,00872598,extended,00
+patch=1,EE,008726a0,extended,00
+patch=1,EE,008727a8,extended,00
+patch=1,EE,008728b0,extended,00
+patch=1,EE,008729b8,extended,00
+patch=1,EE,00872fe8,extended,00
+patch=1,EE,00873618,extended,00
+patch=1,EE,00873720,extended,00
+patch=1,EE,00873a38,extended,00
+patch=1,EE,00874170,extended,00
+patch=1,EE,008749b0,extended,00
+patch=1,EE,00874cc8,extended,00
+patch=1,EE,008752f8,extended,00
+patch=1,EE,00875718,extended,00
+patch=1,EE,00875820,extended,00
+patch=1,EE,00875e50,extended,00
+patch=1,EE,00876168,extended,00
+patch=1,EE,00876270,extended,00
+patch=1,EE,00876ab0,extended,00
+patch=1,EE,00877a28,extended,00
+patch=1,EE,00878268,extended,00
+patch=1,EE,00878580,extended,00
+patch=1,EE,008789a0,extended,00
+patch=1,EE,00878dc0,extended,00
+patch=1,EE,008790d8,extended,00
+patch=1,EE,00879d38,extended,00
+patch=1,EE,00879e40,extended,00
+patch=1,EE,00879f48,extended,00
+patch=1,EE,0087a050,extended,00
+patch=1,EE,0087a158,extended,00
+patch=1,EE,0087a260,extended,00
+patch=1,EE,0087aba8,extended,00
+patch=1,EE,0087b1d8,extended,00
+
+[Car Dealer\Replace Audi S4\Sample 001(RX7 Race Car 17000RPM)]
+author=Ooper
+description=Buying the Audi S4 gives you Sample 001.
+patch=1,EE,2086BE70,extended,01F3
+
+[Car Dealer\Replace Audi S4\Sample 002(Yellow TVR)]
+author=Ooper
+description=Buying the Audi S4 gives you Sample 002.
+patch=1,EE,2086BE70,extended,01F4
+
+[Car Dealer\Replace Audi S4\Sample 003(Acura RSX)]
+author=Ooper
+description=Buying the Audi S4 gives you Sample 003.
+patch=1,EE,2086BE70,extended,01F5
+
+[Car Dealer\Replace Audi S4\Sample 004(Grey/Green TVR)]
+author=Ooper
+description=Buying the Audi S4 gives you Sample 004.
+patch=1,EE,2086BE70,extended,01F6
+
+
+[Car Dealer\Replace Audi S4\Sample 005(White Acura RSX)]
+author=Ooper
+description=Buying the Audi S4 gives you Sample 005.
+patch=1,EE,2086BE70,extended,01F7
+
+[Car Dealer\Replace Audi S4\Sample 006(Weird sphears)]
+author=Ooper
+description=Buying the Audi S4 gives you Sample 006.
+patch=1,EE,2086BE70,extended,01F8
+
+[Car Dealer\Replace Audi S4\Sample 007(White Acura RSX)]
+author=Ooper
+description=Buying the Audi S4 gives you Sample 007.
+patch=1,EE,2086BE70,extended,01F9
+
+[Car Dealer\Replace Audi S4\Sample 008(Blue Acura RSX)]
+author=Ooper
+description=Buying the Audi S4 gives you Sample 008.
+patch=1,EE,2086BE70,extended,01FA
+
+[Car Dealer\Replace Audi S4\Sample 009(White TVR)]
+author=Ooper
+description=Buying the Audi S4 gives you Sample 009.
+patch=1,EE,2086BE70,extended,01FB
+
+[Car Dealer\Replace Audi S4\Sample 010(F1)]
+author=Ooper
+description=Buying the Audi S4 gives you Sample 010.
+patch=1,EE,2086BE70,extended,01FC
+
+[Car Dealer\Replace Audi S4\Mazda MX-5(Offset Japanese Plate)]
+author=Ooper
+description=Buying the Audi S4 gives you Mazda MX-5(Offset Japanese Plate).
+patch=1,EE,2086BE70,extended,0154
+
+[Car Dealer\Replace Audi S4\Mazda MX-5(Roll Cage + Japanese Plate)]
+author=Ooper
+description=Buying the Audi S4 gives you Mazda MX-5(Roll Cage + Japanese Plate).
+patch=1,EE,2086BE70,extended,015A
+
+[Car Dealer\Replace Audi S4\Mazda MX-5(Gran Turismo Plate)]
+author=Ooper
+description=Buying the Audi S4 gives you Mazda MX-5(Gran Turismo Plate).
+patch=1,EE,2086BE70,extended,0158
+
+[Car Dealer\Replace Audi S4\Nissan GT-R M-Spec]
+author=Ooper
+description=Buying the Audi S4 gives you Nissan GT-R M-Spec.
+patch=1,EE,2086BE70,extended,018F
+
+[Car Dealer\Replace Audi S4\Lamborghini Diablo]
+author=Ooper
+description=Buying the Audi S4 gives you Lamborghini Diablo.
+patch=1,EE,2086BE70,extended,0143
+
+[Car Dealer\Replace Audi S4\Lancia Stratos]
+author=Ooper
+description=Buying the Audi S4 gives you Lancia Stratos.
+patch=1,EE,2086BE70,extended,0144
+
+[Car Dealer\Replace Audi S4\Lancia Stratos Rally Car]
+author=Ooper
+description=Buying the Audi S4 gives you Lancia Stratos Rally Car.
+patch=1,EE,2086BE70,extended,0145
+
+[Car Dealer\Replace Audi S4\Porsche 911(996) GT3]
+author=Ooper
+description=Buying the Audi S4 gives you Porsche 911(996) GT3.
+patch=1,EE,2086BE70,extended,01EC
+
+[Car Dealer\Replace Audi S4\Lancer 6 Rally Car Special]
+author=Ooper
+description=Buying the Audi S4 gives you Lancer 6 Rally Car Special.
+patch=1,EE,2086BE70,extended,01FD
