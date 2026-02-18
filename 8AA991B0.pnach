@@ -1,6 +1,5 @@
 gametitle=Gran Turismo 3 [PBPX_955.03;1]NTSC [8AA991B0]
 
-
 //0350AF0 test unused byte//single race ticks 1F978FC//championship race ticks 1F9685C
 //if single race ticks hit 1
 //set our test byte to 1
@@ -6995,3 +6994,33 @@ patch=1,EE,2086BE70,extended,01EC
 author=Ooper
 description=Buying the Audi S4 gives you Lancer 6 Rally Car Special.
 patch=1,EE,2086BE70,extended,01FD
+
+[Gears\Simulation Mode\Allow 7th Gear]
+author=Ooper
+description=Allow 7th gear to be selected with manual transmission.
+patch=1,EE,D1F978FC,extended,01000001
+//if single race set total gears to 7
+patch=1,EE,01FBDAE6,extended,00000007
+//if championship race set total gears to 7
+patch=1,EE,D1F9685C,extended,01000001
+patch=1,EE,21FBCAA2,extended,00000007
+
+[Gears\Simulation Mode\Allow 8th Gear]
+author=Ooper
+description=Allow 8th gear to be selected with manual transmission.
+patch=1,EE,D1F978FC,extended,01000001
+//if single race set total gears to 8
+patch=1,EE,01FBDAE6,extended,00000008
+//if championship race set total gears to 8
+patch=1,EE,D1F9685C,extended,01000001
+patch=1,EE,21FBCAA2,extended,00000008
+
+[Gears\Simulation Mode\Allow 9th Gear]
+author=Ooper
+description=Allow 9th gear to be selected with manual transmission.
+patch=1,EE,D1F978FC,extended,01000001
+//if single race set total gears to 9
+patch=1,EE,01FBDAE6,extended,00000009
+//if championship race set total gears to 9
+patch=1,EE,D1F9685C,extended,01000001
+patch=1,EE,21FBCAA2,extended,00000009
