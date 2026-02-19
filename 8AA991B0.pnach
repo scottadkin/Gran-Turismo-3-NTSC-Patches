@@ -1,5 +1,229 @@
 gametitle=Gran Turismo 3 [PBPX_955.03;1]NTSC [8AA991B0]
 
+
+[Lap Count\Simulation Mode\1 Lap Races]
+author=Ooper
+description=All races will be 1 lap long.
+patch=1,EE,D1F978FC,extended,01000001
+patch=1,EE,00350AF0,extended,00000001
+patch=1,EE,D1F9685C,extended,01000001
+patch=1,EE,00350AF0,extended,00000002
+//if single race event exec next 2 lines
+patch=1,EE,D0350AF0,extended,02000001
+//hud Lap x/x
+patch=1,EE,01FA3F7C,extended,00000001
+//real laps
+patch=1,EE,01FCBB55,extended,00000001
+//if championship race event exec next 2 lines
+patch=1,EE,D0350AF0,extended,02000002
+//hud Lap x/x
+patch=1,EE,01FA2EDC,extended,00000001
+//real laps
+patch=1,EE,01FCAB11,extended,00000001
+
+[Lap Count\Simulation Mode\2 Lap Races]
+author=Ooper
+description=All races will be 2 laps long.
+patch=1,EE,D1F978FC,extended,01000001
+patch=1,EE,00350AF0,extended,00000001
+patch=1,EE,D1F9685C,extended,01000001
+patch=1,EE,00350AF0,extended,00000002
+//if single race event exec next 2 lines
+patch=1,EE,D0350AF0,extended,02000001
+//hud Lap x/x
+patch=1,EE,01FA3F7C,extended,00000002
+//real laps
+patch=1,EE,01FCBB55,extended,00000002
+//if championship race event exec next 2 lines
+patch=1,EE,D0350AF0,extended,02000002
+//hud Lap x/x
+patch=1,EE,01FA2EDC,extended,00000002
+//real laps
+patch=1,EE,01FCAB11,extended,00000002
+
+
+[Lap Count\Simulation Mode\5 Lap Races]
+author=Ooper
+description=All races will be 5 laps long.
+patch=1,EE,D1F978FC,extended,01000001
+patch=1,EE,00350AF0,extended,00000001
+patch=1,EE,D1F9685C,extended,01000001
+patch=1,EE,00350AF0,extended,00000002
+//if single race event exec next 2 lines
+patch=1,EE,D0350AF0,extended,02000001
+//hud Lap x/x
+patch=1,EE,01FA3F7C,extended,00000005
+//real laps
+patch=1,EE,01FCBB55,extended,00000005
+//if championship race event exec next 2 lines
+patch=1,EE,D0350AF0,extended,02000002
+//hud Lap x/x
+patch=1,EE,01FA2EDC,extended,00000005
+//real laps
+patch=1,EE,01FCAB11,extended,00000005
+
+
+[Lap Count\Simulation Mode\10 Lap Races]
+author=Ooper
+description=All races will be 10 laps long.
+patch=1,EE,D1F978FC,extended,01000001
+patch=1,EE,00350AF0,extended,00000001
+patch=1,EE,D1F9685C,extended,01000001
+patch=1,EE,00350AF0,extended,00000002
+//if single race event exec next 2 lines
+patch=1,EE,D0350AF0,extended,02000001
+//hud Lap x/x
+patch=1,EE,01FA3F7C,extended,0000000A
+//real laps
+patch=1,EE,01FCBB55,extended,0000000A
+//if championship race event exec next 2 lines
+patch=1,EE,D0350AF0,extended,02000002
+//hud Lap x/x
+patch=1,EE,01FA2EDC,extended,0000000A
+//real laps
+patch=1,EE,01FCAB11,extended,0000000A
+
+[Lap Count\Simulation Mode\15 Lap Races]
+author=Ooper
+description=All races will be 15 laps long.
+patch=1,EE,D1F978FC,extended,01000001
+patch=1,EE,00350AF0,extended,00000001
+patch=1,EE,D1F9685C,extended,01000001
+patch=1,EE,00350AF0,extended,00000002
+//if single race event exec next 2 lines
+patch=1,EE,D0350AF0,extended,02000001
+//hud Lap x/x
+patch=1,EE,01FA3F7C,extended,0000000F
+//real laps
+patch=1,EE,01FCBB55,extended,0000000F
+//if championship race event exec next 2 lines
+patch=1,EE,D0350AF0,extended,02000002
+//hud Lap x/x
+patch=1,EE,01FA2EDC,extended,0000000F
+//real laps
+patch=1,EE,01FCAB11,extended,0000000F
+
+[Lap Count\Simulation Mode\20 Lap Races]
+author=Ooper
+description=All races will be 20 laps long.
+patch=1,EE,D1F978FC,extended,01000001
+patch=1,EE,00350AF0,extended,00000001
+patch=1,EE,D1F9685C,extended,01000001
+patch=1,EE,00350AF0,extended,00000002
+//if single race event exec next 2 lines
+patch=1,EE,D0350AF0,extended,02000001
+//hud Lap x/x
+patch=1,EE,01FA3F7C,extended,00000014
+//real laps
+patch=1,EE,01FCBB55,extended,00000014
+//if championship race event exec next 2 lines
+patch=1,EE,D0350AF0,extended,02000002
+//hud Lap x/x
+patch=1,EE,01FA2EDC,extended,00000014
+//real laps
+patch=1,EE,01FCAB11,extended,00000014
+
+[Lap Count\Simulation Mode\25 Lap Races]
+author=Ooper
+description=All races will be 25 laps long.
+patch=1,EE,D1F978FC,extended,01000001
+patch=1,EE,00350AF0,extended,00000001
+patch=1,EE,D1F9685C,extended,01000001
+patch=1,EE,00350AF0,extended,00000002
+//if single race event exec next 2 lines
+patch=1,EE,D0350AF0,extended,02000001
+//hud Lap x/x
+patch=1,EE,01FA3F7C,extended,00000019
+//real laps
+patch=1,EE,01FCBB55,extended,00000019
+//if championship race event exec next 2 lines
+patch=1,EE,D0350AF0,extended,02000002
+//hud Lap x/x
+patch=1,EE,01FA2EDC,extended,00000019
+//real laps
+patch=1,EE,01FCAB11,extended,00000019
+
+[Lap Count\Simulation Mode\50 Lap Races]
+author=Ooper
+description=All races will be 50 laps long.
+patch=1,EE,D1F978FC,extended,01000001
+patch=1,EE,00350AF0,extended,00000001
+patch=1,EE,D1F9685C,extended,01000001
+patch=1,EE,00350AF0,extended,00000002
+//if single race event exec next 2 lines
+patch=1,EE,D0350AF0,extended,02000001
+//hud Lap x/x
+patch=1,EE,01FA3F7C,extended,00000032
+//real laps
+patch=1,EE,01FCBB55,extended,00000032
+//if championship race event exec next 2 lines
+patch=1,EE,D0350AF0,extended,02000002
+//hud Lap x/x
+patch=1,EE,01FA2EDC,extended,00000032
+//real laps
+patch=1,EE,01FCAB11,extended,00000032
+
+[Lap Count\Simulation Mode\69 Lap Races]
+author=Ooper
+description=All races will be 69 laps long.
+patch=1,EE,D1F978FC,extended,01000001
+patch=1,EE,00350AF0,extended,00000001
+patch=1,EE,D1F9685C,extended,01000001
+patch=1,EE,00350AF0,extended,00000002
+//if single race event exec next 2 lines
+patch=1,EE,D0350AF0,extended,02000001
+//hud Lap x/x
+patch=1,EE,01FA3F7C,extended,00000045
+//real laps
+patch=1,EE,01FCBB55,extended,00000045
+//if championship race event exec next 2 lines
+patch=1,EE,D0350AF0,extended,02000002
+//hud Lap x/x
+patch=1,EE,01FA2EDC,extended,00000045
+//real laps
+patch=1,EE,01FCAB11,extended,00000045
+
+[Lap Count\Simulation Mode\100 Lap Races]
+author=Ooper
+description=All races will be 100 laps long.
+patch=1,EE,D1F978FC,extended,01000001
+patch=1,EE,00350AF0,extended,00000001
+patch=1,EE,D1F9685C,extended,01000001
+patch=1,EE,00350AF0,extended,00000002
+//if single race event exec next 2 lines
+patch=1,EE,D0350AF0,extended,02000001
+//hud Lap x/x
+patch=1,EE,01FA3F7C,extended,00000064
+//real laps
+patch=1,EE,01FCBB55,extended,00000064
+//if championship race event exec next 2 lines
+patch=1,EE,D0350AF0,extended,02000002
+//hud Lap x/x
+patch=1,EE,01FA2EDC,extended,00000064
+//real laps
+patch=1,EE,01FCAB11,extended,00000064
+
+
+[Lap Count\Simulation Mode\255 Lap Races]
+author=Ooper
+description=All races will be 255 laps long.
+patch=1,EE,D1F978FC,extended,01000001
+patch=1,EE,00350AF0,extended,00000001
+patch=1,EE,D1F9685C,extended,01000001
+patch=1,EE,00350AF0,extended,00000002
+//if single race event exec next 2 lines
+patch=1,EE,D0350AF0,extended,02000001
+//hud Lap x/x
+patch=1,EE,01FA3F7C,extended,000000FF
+//real laps
+patch=1,EE,01FCBB55,extended,000000FF
+//if championship race event exec next 2 lines
+patch=1,EE,D0350AF0,extended,02000002
+//hud Lap x/x
+patch=1,EE,01FA2EDC,extended,000000FF
+//real laps
+patch=1,EE,01FCAB11,extended,000000FF
+
 //0350AF0 test unused byte//single race ticks 1F978FC//championship race ticks 1F9685C
 //if single race ticks hit 1
 //set our test byte to 1
