@@ -230,3 +230,14 @@ Address = 209C41D2 2 bytes
 Audi TT Turbo#3 **2072C99C** is 200 bytes after, Audi S4 Turbo#3 **2072C8D4**
 - sprinter trueno -8 bytes example, set value higher for more power, less for less power 255Max
 - Tureno 1st Turbo 134, 2nd turbo 178, 3rd turbo byte is 223(123HP to 266HP(223 default), 267HP(224), 286HP(240), 303HP(255), 73HP(10)),
+
+
+### NA Tune Stages
+- First Price Address? **207278FC**
+- 32 Bytes apart(20 hex)
+- -8 Bytes(1Byte) from price set to higher value for a small increase of power
+- -9 Bytes(1Byte) from price set to higher value for a small increase of power(normally ~ 100)
+- -10 Bytes(1Byte) from price set to higher value for a large increase of power, this also affects the max RPM the car can do, if you set this value too high for the car you are using the game will crash in the same way the old 18000RPM & 32000 RPM patches did. Examples: Dodge Viper can be set to a max ~120 before the game crashes when you try and load an event, NSX type R can be set to 128 and not crash the game.
+- -11 Bytes(1Byte) from price set to a higher value(1-15) for more power, if you set it higher than 15 car will get less power, typical values the game use are in the 1-5 range.
+
+
