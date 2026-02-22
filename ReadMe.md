@@ -68,6 +68,9 @@ These are the old format non-toggleable patches:
 - Racing Chip upgrades now can give the maximum possible power to all cars.
 - Can take a lot of cars past the 1000bhp mark, if you want a 900bhp beetle this is the cheat for you.
 
+### Max Power NA Tune Stages
+- All NA Engine tune stages now give the maximum possible power per upgrade.
+
 ### Global Power Multipliers
 - Adjust all cars' power and upgrades including AI.
 - Some Examples: 0.10x, 0.25x, 0.5x, 1.25x, 1.50x, 1.75x, 2x, 5x, 10x, 25x, 50x, 100x, and even up to 1 million times power.
