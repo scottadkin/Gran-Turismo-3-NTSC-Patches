@@ -267,3 +267,17 @@ Audi TT Turbo#3 **2072C99C** is 200 bytes after, Audi S4 Turbo#3 **2072C8D4**
 - 24 bytes apart(18hex)
 - 542 Total
 - -3 Bytes(1Byte) from price, set to higher value for more power.
+
+
+### Weight upgrades
+- 24 bytes apart
+- price -2 bytes weight modifier(2bytes) lower value less weight, higher more weight
+- yaris stage 1 20718A94
+- yaris stage 2 20718AC4
+- yaris stage 3 20718ADC
+
+
+### Tyres
+- first price address **2076b33c**
+- 48 bytes apart
+- 10942 total
