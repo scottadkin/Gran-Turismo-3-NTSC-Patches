@@ -67,9 +67,15 @@ These are the old format non-toggleable patches:
 ### Max Power Racing Chips
 - Racing Chip upgrades now can give the maximum possible power to all cars.
 - Can take a lot of cars past the 1000bhp mark, if you want a 900bhp beetle this is the cheat for you.
+- **Change in any menu, will not take effect if you change mid race.**
 
 ### Max Power NA Tune Stages
 - All NA Engine tune stages now give the maximum possible power per upgrade.
+- **Change in any menu, will not take effect if you change mid race.**
+
+### Max Power Exhaust Upgrades
+- All Exhaust upgrades now give the maximum possible power per upgrade, racing cars and cars with exhaust tune stock also get more power.
+- **Change in any menu, will not take effect if you change mid race.**
 
 ### Global Power Multipliers
 - Adjust all cars' power and upgrades including AI.
@@ -255,3 +261,9 @@ Audi TT Turbo#3 **2072C99C** is 200 bytes after, Audi S4 Turbo#3 **2072C8D4**
 - 167 Racing Chips Total
 - -3 bytes(1Byte) power modifier(yaris 104 dec) 255 Max, doesn't reduce other upgrades power 
 - -2 bytes(1Byte) power modifier(yaris 104 dec) If you set this to the max value it will make some other upgrades reduce power
+
+### Exhaust Upgrades
+- First Price Address? **2075b994**
+- 24 bytes apart(18hex)
+- 542 Total
+- -3 Bytes(1Byte) from price, set to higher value for more power.
