@@ -64,6 +64,10 @@ These are the old format non-toggleable patches:
 - Wet kerbs are unaffected.
 - **Change at any point for the changes to take effect.**
 
+### Max Power Racing Chips
+- Racing Chip upgrades now can give the maximum possible power to all cars.
+- Can take a lot of cars past the 1000bhp mark, if you want a 900bhp beetle this is the cheat for you.
+
 ### Global Power Multipliers
 - Adjust all cars' power and upgrades including AI.
 - Some Examples: 0.10x, 0.25x, 0.5x, 1.25x, 1.50x, 1.75x, 2x, 5x, 10x, 25x, 50x, 100x, and even up to 1 million times power.
@@ -235,9 +239,16 @@ Audi TT Turbo#3 **2072C99C** is 200 bytes after, Audi S4 Turbo#3 **2072C8D4**
 ### NA Tune Stages
 - First Price Address? **207278FC**
 - 32 Bytes apart(20 hex)
+- 288 Upgrades Total
 - -8 Bytes(1Byte) from price set to higher value for a small increase of power
 - -9 Bytes(1Byte) from price set to higher value for a small increase of power(normally ~ 100)
 - -10 Bytes(1Byte) from price set to higher value for a large increase of power, this also affects the max RPM the car can do, if you set this value too high for the car you are using the game will crash in the same way the old 18000RPM & 32000 RPM patches did. Examples: Dodge Viper can be set to a max ~120 before the game crashes when you try and load an event, NSX type R can be set to 128 and not crash the game.
 - -11 Bytes(1Byte) from price set to a higher value(1-15) for more power, if you set it higher than 15 car will get less power, typical values the game use are in the 1-5 range.
 
 
+### Racing Chips
+- First Price Address? **2072693C**
+- 24 bytes apart(18hex)
+- 167 Racing Chips Total
+- -3 bytes(1Byte) power modifier(yaris 104 dec) 255 Max, doesn't reduce other upgrades power 
+- -2 bytes(1Byte) power modifier(yaris 104 dec) If you set this to the max value it will make some other upgrades reduce power
