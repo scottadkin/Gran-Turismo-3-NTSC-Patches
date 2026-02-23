@@ -276,6 +276,12 @@ Audi TT Turbo#3 **2072C99C** is 200 bytes after, Audi S4 Turbo#3 **2072C8D4**
 - yaris stage 2 20718AC4
 - yaris stage 3 20718ADC
 
+### Port Polish
+- 24 bytes apart
+- first price **207244d4**
+- 156 total
+- -3 bytes from price is power modifier 1 byte
+
 
 ### Tyres
 - first price address **2076b33c**

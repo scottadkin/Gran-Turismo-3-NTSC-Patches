@@ -1,5 +1,11 @@
 gametitle=Gran Turismo 3 [PBPX_955.03;1]NTSC [8AA991B0]
 
+[Upgrades\Max Power Port Polish Test]
+author=Ooper
+description=Test
+patch=1,EE,407244d0,extended,009C0006
+patch=1,EE,0067FF01,extended,00000000
+
 [Upgrades\Max Power Racing Chips]
 author=Ooper
 description=Racing chips will give the max possible power.
