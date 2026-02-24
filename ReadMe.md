@@ -77,6 +77,9 @@ These are the old format non-toggleable patches:
 - All Exhaust upgrades now give the maximum possible power per upgrade, racing cars and cars with exhaust tune stock also get more power.
 - **Change in any menu, will not take effect if you change mid race.**
 
+### Racing Transmissions Allow Max Auto Tune Range
+- All racing transmissions auto tune levels will be able to be tuned beyond their normal limits, instead of the usual ~level 20 to ~ level 40 you can now select level 2 to level 255
+
 ### Global Power Multipliers
 - Adjust all cars' power and upgrades including AI.
 - Some Examples: 0.10x, 0.25x, 0.5x, 1.25x, 1.50x, 1.75x, 2x, 5x, 10x, 25x, 50x, 100x, and even up to 1 million times power.
@@ -287,3 +290,11 @@ Audi TT Turbo#3 **2072C99C** is 200 bytes after, Audi S4 Turbo#3 **2072C8D4**
 - first price address **2076b33c**
 - 48 bytes apart
 - 10942 total
+
+### Transmissions
+- First price address **2073c454**
+- 48 bytes apart.
+- 688 total
+- -1 byte from price(max auto tune level)
+- -2 bytes from price(min auto tune level)
+- -3 bytes from price(default auto tune level)
