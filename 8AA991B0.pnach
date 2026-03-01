@@ -1,5 +1,21 @@
 gametitle=Gran Turismo 3 [PBPX_955.03;1]NTSC [8AA991B0]
 
+[Upgrades\Max Power Engine Displacement Upgrades]
+author=Ooper
+description=Set auto tune level range 2-255.
+patch=1,EE,007267f1,extended,FF 
+patch=1,EE,00726809,extended,FF 
+patch=1,EE,00726821,extended,FF 
+patch=1,EE,00726839,extended,FF 
+patch=1,EE,00726851,extended,FF 
+patch=1,EE,00726869,extended,FF 
+patch=1,EE,00726881,extended,FF 
+patch=1,EE,00726899,extended,FF 
+patch=1,EE,007268b1,extended,FF 
+patch=1,EE,007268c9,extended,FF 
+patch=1,EE,007268e1,extended,FF 
+patch=1,EE,007268f9,extended,FF 
+patch=1,EE,00726911,extended,FF 
 
 [Upgrades\Racing Transmissions\Set Auto Tune Range Limit 2-255]
 author=Ooper
