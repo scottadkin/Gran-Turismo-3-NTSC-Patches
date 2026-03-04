@@ -1,5 +1,17 @@
 gametitle=Gran Turismo 3 [PBPX_955.03;1]NTSC [8AA991B0]
 
+[Events\Like The Wind\Fix AI Final Gear Ratio]
+author=Ooper
+description=Adjusts the final gear ratio to fix cars like the Zonda and Lotus
+//Zonda C12S
+patch=1,EE,10896234,extended,0802
+//Lotus 350
+patch=1,EE,1088C1C4,extended,0B22
+//supra rz
+patch=1,EE,10886444,extended,0960
+//nissan gtr v spec 1
+patch=1,EE,10895024,extended,0C99
+
 [Upgrades\Max Power Engine Displacement Upgrades]
 author=Ooper
 description=Set auto tune level range 2-255.
