@@ -11,6 +11,16 @@ patch=1,EE,1088C1C4,extended,0B22
 patch=1,EE,10886444,extended,0960
 //nissan gtr v spec 1
 patch=1,EE,10895024,extended,0C99
+//arta nsx
+patch=1,EE,1089BB74,extended,0CE4
+//787b
+patch=1,EE,10889854,extended,0C4E
+//Esperante gtr 1
+patch=1,EE,1089AC94,extended,0AF0
+//speed12
+patch=1,EE,108A25B4,extended,0AF0
+//castrol toms supra
+patch=1,EE,10886774,extended,0AF0
 
 [Upgrades\Max Power Engine Displacement Upgrades]
 author=Ooper
