@@ -1,5 +1,60 @@
 gametitle=Gran Turismo 3 [PBPX_955.03;1]NTSC [8AA991B0]
 
+[Upgrades\Weight Reductions\Remove 10% Total Weight]
+author=Ooper
+description=All weight reduction upgrades remove 10% of total weight.
+patch=1,EE,407180ea,extended,01ED0006
+patch=1,EE,00010384,extended,00000000
+
+[Upgrades\Weight Reductions\Remove 25% Total Weight]
+author=Ooper
+description=All weight reduction upgrades remove 25% of total weight.
+patch=1,EE,407180ea,extended,01ED0006
+patch=1,EE,000102EE,extended,00000000
+
+[Upgrades\Weight Reductions\Remove 33% Total Weight]
+author=Ooper
+description=All weight reduction upgrades remove 10% of total weight.
+patch=1,EE,407180ea,extended,01ED0006
+patch=1,EE,0001029B,extended,00000000
+
+
+[Upgrades\Weight Reductions\Remove 50% Total Weight]
+author=Ooper
+description=All weight reduction upgrades remove 50% of total weight.
+patch=1,EE,407180ea,extended,01ED0006
+patch=1,EE,000101F4,extended,00000000
+
+[Upgrades\Weight Reductions\Remove 75% Total Weight]
+author=Ooper
+description=All weight reduction upgrades remove 75% of total weight.
+patch=1,EE,407180ea,extended,01ED0006
+patch=1,EE,000100FA,extended,00000000
+
+[Upgrades\Weight Reductions\Remove 85% Total Weight]
+author=Ooper
+description=All weight reduction upgrades remove 85% of total weight.
+patch=1,EE,407180ea,extended,01ED0006
+patch=1,EE,00010096,extended,00000000
+
+[Upgrades\Weight Reductions\Remove 90% Total Weight]
+author=Ooper
+description=All weight reduction upgrades remove 90% of total weight.
+patch=1,EE,407180ea,extended,01ED0006
+patch=1,EE,00010064,extended,00000000
+
+[Upgrades\Weight Reductions\Remove 95% Total Weight]
+author=Ooper
+description=All weight reduction upgrades remove 95% of total weight.
+patch=1,EE,407180ea,extended,01ED0006
+patch=1,EE,00010032,extended,00000000
+
+[Upgrades\Weight Reductions\Remove 99% Total Weight]
+author=Ooper
+description=All weight reduction upgrades remove 99% of total weight.
+patch=1,EE,407180ea,extended,01ED0006
+patch=1,EE,0001000A,extended,00000000
+
 [Events\Like The Wind\Fix AI Final Gear Ratio]
 author=Ooper
 description=Adjusts the final gear ratio to fix cars like the Zonda and Lotus
